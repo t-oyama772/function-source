@@ -1,0 +1,2066 @@
+2021-07-13 01:54:50.680663 (MainThread): Running with dbt=0.19.2
+2021-07-13 01:54:50.708248 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.rpc.server.RPCServerTask'>, debug=False, defer=None, exclude=None, host='0.0.0.0', log_cache_events=False, log_format='default', models=None, partial_parse=True, port=8580, profile='user', profiles_dir='/usr/src/develop/.dbt', project_dir=None, record_timing_info=None, rpc_method=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='rpc', write_json=True)
+2021-07-13 01:54:50.844234 (MainThread): Tracking: tracking
+2021-07-13 01:54:50.844460 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca558be80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca566b220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca7dd5730>]}
+2021-07-13 01:54:50.844710 (MainThread): Serving RPC server at 0.0.0.0:8580, pid=15
+2021-07-13 01:54:50.844950 (MainThread): Supported methods: ['cli_args', 'compile', 'compile_sql', 'deps', 'docs.generate', 'gc', 'get-manifest', 'kill', 'poll', 'ps', 'run', 'run-operation', 'run_sql', 'seed', 'snapshot', 'snapshot-freshness', 'status', 'test']
+2021-07-13 01:54:50.845113 (MainThread): Send requests to http://localhost:8580/jsonrpc
+2021-07-13 01:54:50.855796 (Thread-80): For key my_new_project, hash mismatch (FileHash(name='sha256', checksum='4e8983ca2e3232fba252572e3432554aa8af691c28b7ee474c0f88800eb8f32b') -> FileHash(name='sha256', checksum='cf6c4c303f7bea7773380fd9142da77e9b12daad9671cbf3f20f2e1f73990534')), cache invalidated
+2021-07-13 01:54:50.857187 (Thread-80): Parsing macros/adapters.sql
+2021-07-13 01:54:50.875874 (Thread-80): Parsing macros/etc.sql
+2021-07-13 01:54:50.877901 (Thread-80): Parsing macros/catalog.sql
+2021-07-13 01:54:50.883736 (Thread-80): Parsing macros/materializations/copy.sql
+2021-07-13 01:54:50.887987 (Thread-80): Parsing macros/materializations/table.sql
+2021-07-13 01:54:50.897437 (Thread-80): Parsing macros/materializations/incremental.sql
+2021-07-13 01:54:50.909298 (Thread-80): Parsing macros/materializations/seed.sql
+2021-07-13 01:54:50.911917 (Thread-80): Parsing macros/materializations/snapshot.sql
+2021-07-13 01:54:50.913680 (Thread-80): Parsing macros/materializations/view.sql
+2021-07-13 01:54:50.917163 (Thread-80): Parsing macros/core.sql
+2021-07-13 01:54:50.920917 (Thread-80): Parsing macros/materializations/helpers.sql
+2021-07-13 01:54:50.930037 (Thread-80): Parsing macros/materializations/common/merge.sql
+2021-07-13 01:54:50.943742 (Thread-80): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-07-13 01:54:50.945504 (Thread-80): Parsing macros/materializations/snapshot/strategies.sql
+2021-07-13 01:54:50.962557 (Thread-80): Parsing macros/materializations/snapshot/snapshot.sql
+2021-07-13 01:54:50.992976 (Thread-80): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-07-13 01:54:50.997818 (Thread-80): Parsing macros/materializations/view/view.sql
+2021-07-13 01:54:51.003847 (Thread-80): Parsing macros/materializations/seed/seed.sql
+2021-07-13 01:54:51.023923 (Thread-80): Parsing macros/materializations/table/table.sql
+2021-07-13 01:54:51.030363 (Thread-80): Parsing macros/materializations/incremental/helpers.sql
+2021-07-13 01:54:51.032175 (Thread-80): Parsing macros/materializations/incremental/incremental.sql
+2021-07-13 01:54:51.037999 (Thread-80): Parsing macros/etc/is_incremental.sql
+2021-07-13 01:54:51.039593 (Thread-80): Parsing macros/etc/query.sql
+2021-07-13 01:54:51.040632 (Thread-80): Parsing macros/etc/datetime.sql
+2021-07-13 01:54:51.049188 (Thread-80): Parsing macros/etc/get_custom_alias.sql
+2021-07-13 01:54:51.050127 (Thread-80): Parsing macros/etc/get_custom_database.sql
+2021-07-13 01:54:51.051786 (Thread-80): Parsing macros/etc/get_custom_schema.sql
+2021-07-13 01:54:51.053702 (Thread-80): Parsing macros/schema_tests/not_null.sql
+2021-07-13 01:54:51.055249 (Thread-80): Parsing macros/schema_tests/accepted_values.sql
+2021-07-13 01:54:51.057889 (Thread-80): Parsing macros/schema_tests/relationships.sql
+2021-07-13 01:54:51.059752 (Thread-80): Parsing macros/schema_tests/unique.sql
+2021-07-13 01:54:51.061466 (Thread-80): Parsing macros/adapters/common.sql
+2021-07-13 01:54:51.113142 (Thread-80): For key my_new_project, hash mismatch (FileHash(name='sha256', checksum='4e8983ca2e3232fba252572e3432554aa8af691c28b7ee474c0f88800eb8f32b') -> FileHash(name='sha256', checksum='cf6c4c303f7bea7773380fd9142da77e9b12daad9671cbf3f20f2e1f73990534')), cache invalidated
+2021-07-13 01:54:51.305815 (Thread-80): Acquiring new bigquery connection "model.my_new_project.my_first_dbt_model".
+2021-07-13 01:54:51.312579 (Thread-80): Acquiring new bigquery connection "model.my_new_project.my_second_model".
+2021-07-13 01:54:51.410240 (Thread-80): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5b169d0>]}
+2021-07-13 01:54:52.102493 (Thread-81): handling status request
+2021-07-13 01:54:52.102780 (Thread-81): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca59b5100>]}
+2021-07-13 01:54:52.103598 (Thread-81): sending response (<Response 10955 bytes [200 OK]>) to 10.0.16.173
+2021-07-13 01:54:52.166828 (Thread-82): handling status request
+2021-07-13 01:54:52.167097 (Thread-82): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5a3c610>]}
+2021-07-13 01:54:52.167822 (Thread-82): sending response (<Response 10955 bytes [200 OK]>) to 10.0.2.27
+2021-07-13 01:54:52.190730 (Thread-83): handling status request
+2021-07-13 01:54:52.190953 (Thread-83): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca57ea880>]}
+2021-07-13 01:54:52.191632 (Thread-83): sending response (<Response 10955 bytes [200 OK]>) to 10.0.46.218
+2021-07-13 01:54:55.753157 (Thread-84): handling status request
+2021-07-13 01:54:55.753482 (Thread-84): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca55370d0>]}
+2021-07-13 01:54:55.754312 (Thread-84): sending response (<Response 10955 bytes [200 OK]>) to 10.0.28.240
+2021-07-13 01:54:55.915923 (Thread-85): handling status request
+2021-07-13 01:54:55.916299 (Thread-85): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5772250>]}
+2021-07-13 01:54:55.917414 (Thread-85): sending response (<Response 10955 bytes [200 OK]>) to 10.0.27.46
+2021-07-13 01:54:56.111028 (Thread-86): handling cli_args request
+2021-07-13 01:54:56.111350 (Thread-86): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5a8b670>]}
+2021-07-13 01:54:56.119723 (Thread-86): Connection 'model.my_new_project.my_second_model' was properly closed.
+2021-07-13 01:54:57.868423 (Thread-86): sending response (<Response 138 bytes [200 OK]>) to 10.0.39.85
+2021-07-13 01:54:57.903818 (MainThread): Partial parsing not enabled
+2021-07-13 01:54:57.906038 (MainThread): Parsing macros/adapters.sql
+2021-07-13 01:54:57.926359 (MainThread): Parsing macros/etc.sql
+2021-07-13 01:54:57.928611 (MainThread): Parsing macros/catalog.sql
+2021-07-13 01:54:57.934747 (MainThread): Parsing macros/materializations/copy.sql
+2021-07-13 01:54:57.939129 (MainThread): Parsing macros/materializations/table.sql
+2021-07-13 01:54:57.948807 (MainThread): Parsing macros/materializations/incremental.sql
+2021-07-13 01:54:57.960825 (MainThread): Parsing macros/materializations/seed.sql
+2021-07-13 01:54:57.963523 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-07-13 01:54:57.965322 (MainThread): Parsing macros/materializations/view.sql
+2021-07-13 01:54:57.968757 (MainThread): Parsing macros/core.sql
+2021-07-13 01:54:57.972554 (MainThread): Parsing macros/materializations/helpers.sql
+2021-07-13 01:54:57.981398 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-07-13 01:54:57.995064 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-07-13 01:54:57.996920 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-07-13 01:54:58.014155 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-07-13 01:54:58.044849 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-07-13 01:54:58.049763 (MainThread): Parsing macros/materializations/view/view.sql
+2021-07-13 01:54:58.055849 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-07-13 01:54:58.075972 (MainThread): Parsing macros/materializations/table/table.sql
+2021-07-13 01:54:58.082545 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-07-13 01:54:58.084417 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-07-13 01:54:58.090278 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-07-13 01:54:58.091914 (MainThread): Parsing macros/etc/query.sql
+2021-07-13 01:54:58.092992 (MainThread): Parsing macros/etc/datetime.sql
+2021-07-13 01:54:58.101627 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-07-13 01:54:58.102597 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-07-13 01:54:58.104287 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-07-13 01:54:58.106217 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-07-13 01:54:58.107771 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-07-13 01:54:58.110409 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-07-13 01:54:58.112314 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-07-13 01:54:58.114064 (MainThread): Parsing macros/adapters/common.sql
+2021-07-13 01:54:58.162794 (MainThread): Partial parsing not enabled
+2021-07-13 01:54:58.270851 (Thread-87): handling poll request
+2021-07-13 01:54:58.271226 (Thread-87): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca59b5100>]}
+2021-07-13 01:54:58.272399 (Thread-87): sending response (<Response 9610 bytes [200 OK]>) to 10.0.2.27
+2021-07-13 01:54:58.348502 (MainThread): Acquiring new bigquery connection "model.my_new_project.my_first_dbt_model".
+2021-07-13 01:54:58.360214 (MainThread): Acquiring new bigquery connection "model.my_new_project.my_second_model".
+2021-07-13 01:54:58.468498 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2a93b920-b347-462c-8fef-d6f3f72bbab2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8c5bf5ca0>]}
+2021-07-13 01:54:58.492986 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2a93b920-b347-462c-8fef-d6f3f72bbab2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8c5ba8790>]}
+2021-07-13 01:54:58.493278 (MainThread): Found 2 models, 2 tests, 0 snapshots, 0 analyses, 156 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-07-13 01:54:58.494042 (MainThread): 
+2021-07-13 01:54:58.494315 (MainThread): Acquiring new bigquery connection "master".
+2021-07-13 01:54:58.495268 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_raksulcrm-dev_p_toyama".
+2021-07-13 01:54:58.495395 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-07-13 01:54:58.790708 (MainThread): 01:54:58 | Concurrency: 1 threads (target='default')
+2021-07-13 01:54:58.790841 (MainThread): 01:54:58 | 
+2021-07-13 01:54:58.792897 (Thread-1): Began running node model.my_new_project.my_first_dbt_model
+2021-07-13 01:54:58.793203 (Thread-1): Acquiring new bigquery connection "model.my_new_project.my_first_dbt_model".
+2021-07-13 01:54:58.793293 (Thread-1): Compiling model.my_new_project.my_first_dbt_model
+2021-07-13 01:54:58.795799 (Thread-1): Writing injected SQL for node "model.my_new_project.my_first_dbt_model"
+2021-07-13 01:54:58.811603 (Thread-1): finished collecting timing info
+2021-07-13 01:54:58.811753 (Thread-1): finished collecting timing info
+2021-07-13 01:54:58.811999 (Thread-1): Finished running node model.my_new_project.my_first_dbt_model
+2021-07-13 01:54:58.812771 (Thread-1): Began running node model.my_new_project.my_second_model
+2021-07-13 01:54:58.813077 (Thread-1): Acquiring new bigquery connection "model.my_new_project.my_second_model".
+2021-07-13 01:54:58.813156 (Thread-1): Compiling model.my_new_project.my_second_model
+2021-07-13 01:54:58.815301 (Thread-1): Writing injected SQL for node "model.my_new_project.my_second_model"
+2021-07-13 01:54:58.829348 (Thread-1): finished collecting timing info
+2021-07-13 01:54:58.829476 (Thread-1): finished collecting timing info
+2021-07-13 01:54:58.829703 (Thread-1): Finished running node model.my_new_project.my_second_model
+2021-07-13 01:54:58.829796 (Thread-1): Began running node test.my_new_project.not_null_my_first_dbt_model_id
+2021-07-13 01:54:58.829982 (Thread-1): Acquiring new bigquery connection "test.my_new_project.not_null_my_first_dbt_model_id".
+2021-07-13 01:54:58.830047 (Thread-1): Compiling test.my_new_project.not_null_my_first_dbt_model_id
+2021-07-13 01:54:58.836662 (Thread-1): Writing injected SQL for node "test.my_new_project.not_null_my_first_dbt_model_id"
+2021-07-13 01:54:58.850415 (Thread-1): finished collecting timing info
+2021-07-13 01:54:58.850543 (Thread-1): finished collecting timing info
+2021-07-13 01:54:58.850769 (Thread-1): Finished running node test.my_new_project.not_null_my_first_dbt_model_id
+2021-07-13 01:54:58.850863 (Thread-1): Began running node test.my_new_project.unique_my_first_dbt_model_id
+2021-07-13 01:54:58.851090 (Thread-1): Acquiring new bigquery connection "test.my_new_project.unique_my_first_dbt_model_id".
+2021-07-13 01:54:58.851160 (Thread-1): Compiling test.my_new_project.unique_my_first_dbt_model_id
+2021-07-13 01:54:58.859000 (Thread-1): Writing injected SQL for node "test.my_new_project.unique_my_first_dbt_model_id"
+2021-07-13 01:54:58.873247 (Thread-1): finished collecting timing info
+2021-07-13 01:54:58.873407 (Thread-1): finished collecting timing info
+2021-07-13 01:54:58.873669 (Thread-1): Finished running node test.my_new_project.unique_my_first_dbt_model_id
+2021-07-13 01:54:58.874938 (MainThread): Connection 'master' was properly closed.
+2021-07-13 01:54:58.875030 (MainThread): Connection 'test.my_new_project.unique_my_first_dbt_model_id' was properly closed.
+2021-07-13 01:54:58.936269 (MainThread): 01:54:58 | Done.
+2021-07-13 01:54:59.707708 (Thread-88): handling poll request
+2021-07-13 01:54:59.709119 (Thread-88): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca54a4340>]}
+2021-07-13 01:54:59.710831 (Thread-88): sending response (<Response 26628 bytes [200 OK]>) to 10.0.28.240
+2021-07-13 01:55:00.349309 (Thread-89): handling status request
+2021-07-13 01:55:00.349600 (Thread-89): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca54a4370>]}
+2021-07-13 01:55:00.350473 (Thread-89): sending response (<Response 10955 bytes [200 OK]>) to 10.0.29.103
+2021-07-13 01:55:00.358423 (Thread-90): handling status request
+2021-07-13 01:55:00.358646 (Thread-90): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca54a4550>]}
+2021-07-13 01:55:00.359404 (Thread-90): sending response (<Response 10955 bytes [200 OK]>) to 10.0.13.233
+2021-07-13 01:55:00.385373 (Thread-91): handling status request
+2021-07-13 01:55:00.385663 (Thread-91): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca54a45b0>]}
+2021-07-13 01:55:00.386438 (Thread-91): sending response (<Response 10955 bytes [200 OK]>) to 10.0.43.149
+2021-07-13 01:55:19.111962 (Thread-92): Got an acceptable cached parse result
+2021-07-13 01:55:19.404252 (Thread-92): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5746ac0>]}
+2021-07-13 01:55:19.704795 (Thread-93): handling status request
+2021-07-13 01:55:19.705096 (Thread-93): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5746d00>]}
+2021-07-13 01:55:19.705608 (Thread-93): sending response (<Response 885 bytes [200 OK]>) to 10.0.28.240
+2021-07-13 01:55:19.707569 (Thread-94): handling status request
+2021-07-13 01:55:19.707784 (Thread-94): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5746d30>]}
+2021-07-13 01:55:19.708174 (Thread-94): sending response (<Response 885 bytes [200 OK]>) to 10.0.42.193
+2021-07-13 01:55:19.710570 (Thread-95): handling status request
+2021-07-13 01:55:19.710754 (Thread-95): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca59e47c0>]}
+2021-07-13 01:55:19.711134 (Thread-95): sending response (<Response 885 bytes [200 OK]>) to 10.0.3.121
+2021-07-13 01:55:24.563156 (Thread-96): Got an acceptable cached parse result
+2021-07-13 01:55:24.972921 (Thread-96): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5798cd0>]}
+2021-07-13 01:55:25.129510 (Thread-97): handling status request
+2021-07-13 01:55:25.129853 (Thread-97): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca58d1250>]}
+2021-07-13 01:55:25.130365 (Thread-97): sending response (<Response 885 bytes [200 OK]>) to 10.0.4.161
+2021-07-13 01:55:25.146892 (Thread-98): handling status request
+2021-07-13 01:55:25.147190 (Thread-98): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5798eb0>]}
+2021-07-13 01:55:25.147678 (Thread-98): sending response (<Response 885 bytes [200 OK]>) to 10.0.43.149
+2021-07-13 01:55:25.183527 (Thread-99): handling status request
+2021-07-13 01:55:25.183785 (Thread-99): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca57b6b80>]}
+2021-07-13 01:55:25.184284 (Thread-99): sending response (<Response 885 bytes [200 OK]>) to 10.0.46.218
+2021-07-13 01:55:56.955374 (Thread-100): For key my_new_project, hash mismatch (FileHash(name='sha256', checksum='cf6c4c303f7bea7773380fd9142da77e9b12daad9671cbf3f20f2e1f73990534') -> FileHash(name='sha256', checksum='6e9accffc7d7743b281e2fc2a9b3900a311a0047cb40af327fce17dfd562a7ac')), cache invalidated
+2021-07-13 01:55:56.958529 (Thread-100): Parsing macros/adapters.sql
+2021-07-13 01:55:56.977541 (Thread-100): Parsing macros/etc.sql
+2021-07-13 01:55:56.979595 (Thread-100): Parsing macros/catalog.sql
+2021-07-13 01:55:56.987750 (Thread-100): Parsing macros/materializations/copy.sql
+2021-07-13 01:55:56.992358 (Thread-100): Parsing macros/materializations/table.sql
+2021-07-13 01:55:57.001867 (Thread-100): Parsing macros/materializations/incremental.sql
+2021-07-13 01:55:57.013599 (Thread-100): Parsing macros/materializations/seed.sql
+2021-07-13 01:55:57.016227 (Thread-100): Parsing macros/materializations/snapshot.sql
+2021-07-13 01:55:57.017982 (Thread-100): Parsing macros/materializations/view.sql
+2021-07-13 01:55:57.021411 (Thread-100): Parsing macros/core.sql
+2021-07-13 01:55:57.025184 (Thread-100): Parsing macros/materializations/helpers.sql
+2021-07-13 01:55:57.034241 (Thread-100): Parsing macros/materializations/common/merge.sql
+2021-07-13 01:55:57.047954 (Thread-100): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-07-13 01:55:57.049692 (Thread-100): Parsing macros/materializations/snapshot/strategies.sql
+2021-07-13 01:55:57.067231 (Thread-100): Parsing macros/materializations/snapshot/snapshot.sql
+2021-07-13 01:55:57.097731 (Thread-100): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-07-13 01:55:57.102585 (Thread-100): Parsing macros/materializations/view/view.sql
+2021-07-13 01:55:57.108675 (Thread-100): Parsing macros/materializations/seed/seed.sql
+2021-07-13 01:55:57.128824 (Thread-100): Parsing macros/materializations/table/table.sql
+2021-07-13 01:55:57.135355 (Thread-100): Parsing macros/materializations/incremental/helpers.sql
+2021-07-13 01:55:57.137128 (Thread-100): Parsing macros/materializations/incremental/incremental.sql
+2021-07-13 01:55:57.142872 (Thread-100): Parsing macros/etc/is_incremental.sql
+2021-07-13 01:55:57.144462 (Thread-100): Parsing macros/etc/query.sql
+2021-07-13 01:55:57.145508 (Thread-100): Parsing macros/etc/datetime.sql
+2021-07-13 01:55:57.154100 (Thread-100): Parsing macros/etc/get_custom_alias.sql
+2021-07-13 01:55:57.155068 (Thread-100): Parsing macros/etc/get_custom_database.sql
+2021-07-13 01:55:57.156693 (Thread-100): Parsing macros/etc/get_custom_schema.sql
+2021-07-13 01:55:57.158610 (Thread-100): Parsing macros/schema_tests/not_null.sql
+2021-07-13 01:55:57.160146 (Thread-100): Parsing macros/schema_tests/accepted_values.sql
+2021-07-13 01:55:57.162787 (Thread-100): Parsing macros/schema_tests/relationships.sql
+2021-07-13 01:55:57.164645 (Thread-100): Parsing macros/schema_tests/unique.sql
+2021-07-13 01:55:57.166354 (Thread-100): Parsing macros/adapters/common.sql
+2021-07-13 01:55:57.220355 (Thread-100): For key my_new_project, hash mismatch (FileHash(name='sha256', checksum='cf6c4c303f7bea7773380fd9142da77e9b12daad9671cbf3f20f2e1f73990534') -> FileHash(name='sha256', checksum='6e9accffc7d7743b281e2fc2a9b3900a311a0047cb40af327fce17dfd562a7ac')), cache invalidated
+2021-07-13 01:55:57.401558 (Thread-100): Acquiring new bigquery connection "model.my_new_project.my_first_dbt_model".
+2021-07-13 01:55:57.409103 (Thread-100): Acquiring new bigquery connection "model.my_new_project.my_second_model".
+2021-07-13 01:55:57.532389 (Thread-100): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5461190>]}
+2021-07-13 01:55:57.562058 (Thread-101): handling status request
+2021-07-13 01:55:57.562338 (Thread-101): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5798850>]}
+2021-07-13 01:55:57.563207 (Thread-101): sending response (<Response 10992 bytes [200 OK]>) to 10.0.14.3
+2021-07-13 01:55:57.576185 (Thread-102): handling status request
+2021-07-13 01:55:57.576901 (Thread-103): handling status request
+2021-07-13 01:55:57.577045 (Thread-102): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca59b53d0>]}
+2021-07-13 01:55:57.577266 (Thread-103): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5461a30>]}
+2021-07-13 01:55:57.578303 (Thread-102): sending response (<Response 10992 bytes [200 OK]>) to 10.0.4.161
+2021-07-13 01:55:57.579106 (Thread-103): sending response (<Response 10992 bytes [200 OK]>) to 10.0.29.103
+2021-07-13 01:56:00.063616 (Thread-104): handling status request
+2021-07-13 01:56:00.063914 (Thread-104): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca56021f0>]}
+2021-07-13 01:56:00.064721 (Thread-104): sending response (<Response 10992 bytes [200 OK]>) to 10.0.3.121
+2021-07-13 01:56:00.326545 (Thread-105): handling status request
+2021-07-13 01:56:00.326835 (Thread-105): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca59b5c70>]}
+2021-07-13 01:56:00.327631 (Thread-105): sending response (<Response 10992 bytes [200 OK]>) to 10.0.42.92
+2021-07-13 01:56:00.495856 (Thread-106): handling cli_args request
+2021-07-13 01:56:00.496141 (Thread-106): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca59b5f40>]}
+2021-07-13 01:56:00.535006 (Thread-106): Connection 'model.my_new_project.my_second_model' was properly closed.
+2021-07-13 01:56:02.343969 (Thread-106): sending response (<Response 138 bytes [200 OK]>) to 10.0.42.92
+2021-07-13 01:56:02.378210 (MainThread): Partial parsing not enabled
+2021-07-13 01:56:02.380242 (MainThread): Parsing macros/adapters.sql
+2021-07-13 01:56:02.400675 (MainThread): Parsing macros/etc.sql
+2021-07-13 01:56:02.402848 (MainThread): Parsing macros/catalog.sql
+2021-07-13 01:56:02.408950 (MainThread): Parsing macros/materializations/copy.sql
+2021-07-13 01:56:02.413280 (MainThread): Parsing macros/materializations/table.sql
+2021-07-13 01:56:02.423057 (MainThread): Parsing macros/materializations/incremental.sql
+2021-07-13 01:56:02.435191 (MainThread): Parsing macros/materializations/seed.sql
+2021-07-13 01:56:02.437865 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-07-13 01:56:02.439692 (MainThread): Parsing macros/materializations/view.sql
+2021-07-13 01:56:02.443139 (MainThread): Parsing macros/core.sql
+2021-07-13 01:56:02.446921 (MainThread): Parsing macros/materializations/helpers.sql
+2021-07-13 01:56:02.455948 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-07-13 01:56:02.469528 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-07-13 01:56:02.471343 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-07-13 01:56:02.489087 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-07-13 01:56:02.519786 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-07-13 01:56:02.524688 (MainThread): Parsing macros/materializations/view/view.sql
+2021-07-13 01:56:02.530838 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-07-13 01:56:02.550894 (MainThread): Parsing macros/materializations/table/table.sql
+2021-07-13 01:56:02.557445 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-07-13 01:56:02.559367 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-07-13 01:56:02.565168 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-07-13 01:56:02.566778 (MainThread): Parsing macros/etc/query.sql
+2021-07-13 01:56:02.567886 (MainThread): Parsing macros/etc/datetime.sql
+2021-07-13 01:56:02.576479 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-07-13 01:56:02.577453 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-07-13 01:56:02.579201 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-07-13 01:56:02.581153 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-07-13 01:56:02.582737 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-07-13 01:56:02.585386 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-07-13 01:56:02.587349 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-07-13 01:56:02.589102 (MainThread): Parsing macros/adapters/common.sql
+2021-07-13 01:56:02.644032 (MainThread): Partial parsing not enabled
+2021-07-13 01:56:02.761903 (Thread-107): handling poll request
+2021-07-13 01:56:02.762224 (Thread-107): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca546a370>]}
+2021-07-13 01:56:02.763368 (Thread-107): sending response (<Response 9611 bytes [200 OK]>) to 10.0.27.46
+2021-07-13 01:56:02.842479 (MainThread): Acquiring new bigquery connection "model.my_new_project.my_first_dbt_model".
+2021-07-13 01:56:02.854703 (MainThread): Acquiring new bigquery connection "model.my_new_project.my_second_model".
+2021-07-13 01:56:02.979990 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9072aaf4-46d6-4ad3-9dbe-509d14eab125', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d9b416ca0>]}
+2021-07-13 01:56:03.001297 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9072aaf4-46d6-4ad3-9dbe-509d14eab125', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d9b3c9ac0>]}
+2021-07-13 01:56:03.001584 (MainThread): Found 2 models, 2 tests, 0 snapshots, 0 analyses, 156 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-07-13 01:56:03.002351 (MainThread): 
+2021-07-13 01:56:03.002632 (MainThread): Acquiring new bigquery connection "master".
+2021-07-13 01:56:03.003604 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_raksulcrm-dev_p_toyama".
+2021-07-13 01:56:03.003709 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-07-13 01:56:03.294744 (MainThread): 01:56:03 | Concurrency: 1 threads (target='default')
+2021-07-13 01:56:03.294954 (MainThread): 01:56:03 | 
+2021-07-13 01:56:03.296864 (Thread-1): Began running node model.my_new_project.my_first_dbt_model
+2021-07-13 01:56:03.297172 (Thread-1): Acquiring new bigquery connection "model.my_new_project.my_first_dbt_model".
+2021-07-13 01:56:03.297256 (Thread-1): Compiling model.my_new_project.my_first_dbt_model
+2021-07-13 01:56:03.299943 (Thread-1): Writing injected SQL for node "model.my_new_project.my_first_dbt_model"
+2021-07-13 01:56:03.314360 (Thread-1): finished collecting timing info
+2021-07-13 01:56:03.314517 (Thread-1): finished collecting timing info
+2021-07-13 01:56:03.314788 (Thread-1): Finished running node model.my_new_project.my_first_dbt_model
+2021-07-13 01:56:03.315641 (Thread-1): Began running node model.my_new_project.my_second_model
+2021-07-13 01:56:03.315922 (Thread-1): Acquiring new bigquery connection "model.my_new_project.my_second_model".
+2021-07-13 01:56:03.315998 (Thread-1): Compiling model.my_new_project.my_second_model
+2021-07-13 01:56:03.318300 (Thread-1): Writing injected SQL for node "model.my_new_project.my_second_model"
+2021-07-13 01:56:03.332400 (Thread-1): finished collecting timing info
+2021-07-13 01:56:03.332539 (Thread-1): finished collecting timing info
+2021-07-13 01:56:03.332821 (Thread-1): Finished running node model.my_new_project.my_second_model
+2021-07-13 01:56:03.332923 (Thread-1): Began running node test.my_new_project.not_null_my_first_dbt_model_id
+2021-07-13 01:56:03.333119 (Thread-1): Acquiring new bigquery connection "test.my_new_project.not_null_my_first_dbt_model_id".
+2021-07-13 01:56:03.333187 (Thread-1): Compiling test.my_new_project.not_null_my_first_dbt_model_id
+2021-07-13 01:56:03.340153 (Thread-1): Writing injected SQL for node "test.my_new_project.not_null_my_first_dbt_model_id"
+2021-07-13 01:56:03.355108 (Thread-1): finished collecting timing info
+2021-07-13 01:56:03.355243 (Thread-1): finished collecting timing info
+2021-07-13 01:56:03.355489 (Thread-1): Finished running node test.my_new_project.not_null_my_first_dbt_model_id
+2021-07-13 01:56:03.355584 (Thread-1): Began running node test.my_new_project.unique_my_first_dbt_model_id
+2021-07-13 01:56:03.355766 (Thread-1): Acquiring new bigquery connection "test.my_new_project.unique_my_first_dbt_model_id".
+2021-07-13 01:56:03.355832 (Thread-1): Compiling test.my_new_project.unique_my_first_dbt_model_id
+2021-07-13 01:56:03.363515 (Thread-1): Writing injected SQL for node "test.my_new_project.unique_my_first_dbt_model_id"
+2021-07-13 01:56:03.378674 (Thread-1): finished collecting timing info
+2021-07-13 01:56:03.378802 (Thread-1): finished collecting timing info
+2021-07-13 01:56:03.379058 (Thread-1): Finished running node test.my_new_project.unique_my_first_dbt_model_id
+2021-07-13 01:56:03.379965 (MainThread): Connection 'master' was properly closed.
+2021-07-13 01:56:03.380066 (MainThread): Connection 'test.my_new_project.unique_my_first_dbt_model_id' was properly closed.
+2021-07-13 01:56:03.439883 (MainThread): 01:56:03 | Done.
+2021-07-13 01:56:04.106738 (Thread-108): handling poll request
+2021-07-13 01:56:04.107083 (Thread-108): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca591f8b0>]}
+2021-07-13 01:56:04.108653 (Thread-108): sending response (<Response 26627 bytes [200 OK]>) to 10.0.14.3
+2021-07-13 01:56:04.768065 (Thread-109): handling status request
+2021-07-13 01:56:04.768371 (Thread-109): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca591f8e0>]}
+2021-07-13 01:56:04.769304 (Thread-109): sending response (<Response 10992 bytes [200 OK]>) to 10.0.42.193
+2021-07-13 01:56:04.770365 (Thread-110): handling status request
+2021-07-13 01:56:04.770550 (Thread-110): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca591faf0>]}
+2021-07-13 01:56:04.771237 (Thread-110): sending response (<Response 10992 bytes [200 OK]>) to 10.0.14.3
+2021-07-13 01:56:04.782099 (Thread-111): handling status request
+2021-07-13 01:56:04.782309 (Thread-111): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca591fb50>]}
+2021-07-13 01:56:04.783006 (Thread-111): sending response (<Response 10992 bytes [200 OK]>) to 10.0.46.218
+2021-07-13 01:56:19.205857 (Thread-112): Got an acceptable cached parse result
+2021-07-13 01:56:19.482059 (Thread-112): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca57068e0>]}
+2021-07-13 01:56:19.804689 (Thread-113): handling status request
+2021-07-13 01:56:19.804997 (Thread-113): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca56c05e0>]}
+2021-07-13 01:56:19.805632 (Thread-113): sending response (<Response 887 bytes [200 OK]>) to 10.0.4.161
+2021-07-13 01:56:19.807182 (Thread-114): handling status request
+2021-07-13 01:56:19.807406 (Thread-114): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca57068e0>]}
+2021-07-13 01:56:19.807829 (Thread-114): sending response (<Response 887 bytes [200 OK]>) to 10.0.13.233
+2021-07-13 01:56:19.857738 (Thread-115): handling status request
+2021-07-13 01:56:19.858020 (Thread-115): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca56c0490>]}
+2021-07-13 01:56:19.858514 (Thread-115): sending response (<Response 887 bytes [200 OK]>) to 10.0.14.3
+2021-07-13 02:12:16.765615 (Thread-116): handling status request
+2021-07-13 02:12:16.767102 (Thread-116): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca56c0340>]}
+2021-07-13 02:12:16.767628 (Thread-116): sending response (<Response 887 bytes [200 OK]>) to 10.0.42.92
+2021-07-13 02:12:16.939652 (Thread-117): handling status request
+2021-07-13 02:12:16.939934 (Thread-117): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5971220>]}
+2021-07-13 02:12:16.940420 (Thread-117): sending response (<Response 887 bytes [200 OK]>) to 10.0.29.103
+2021-07-13 02:12:17.137329 (Thread-118): handling docs.generate request
+2021-07-13 02:12:17.137615 (Thread-118): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5971040>]}
+2021-07-13 02:12:18.867380 (Thread-118): sending response (<Response 138 bytes [200 OK]>) to 10.0.27.46
+2021-07-13 02:12:18.885150 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '50ae680d-c502-48de-808f-dd7bad886b6a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2b91578820>]}
+2021-07-13 02:12:18.885645 (MainThread): Found 2 models, 2 tests, 0 snapshots, 0 analyses, 156 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-07-13 02:12:18.886350 (MainThread): 
+2021-07-13 02:12:18.886471 (MainThread): Acquiring new bigquery connection "master".
+2021-07-13 02:12:18.887198 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_raksulcrm-dev_p_toyama".
+2021-07-13 02:12:18.887303 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-07-13 02:12:19.203668 (Thread-119): handling poll request
+2021-07-13 02:12:19.204022 (Thread-119): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca59713d0>]}
+2021-07-13 02:12:19.204907 (Thread-119): sending response (<Response 2225 bytes [200 OK]>) to 10.0.3.121
+2021-07-13 02:12:19.827039 (MainThread): 02:12:19 | Concurrency: 1 threads (target='default')
+2021-07-13 02:12:19.827173 (MainThread): 02:12:19 | 
+2021-07-13 02:12:19.829750 (Thread-1): Began running node model.my_new_project.my_first_dbt_model
+2021-07-13 02:12:19.829937 (Thread-1): Acquiring new bigquery connection "model.my_new_project.my_first_dbt_model".
+2021-07-13 02:12:19.830016 (Thread-1): Compiling model.my_new_project.my_first_dbt_model
+2021-07-13 02:12:19.834400 (Thread-1): Writing injected SQL for node "model.my_new_project.my_first_dbt_model"
+2021-07-13 02:12:19.853056 (Thread-1): finished collecting timing info
+2021-07-13 02:12:19.853202 (Thread-1): finished collecting timing info
+2021-07-13 02:12:19.853318 (Thread-1): Finished running node model.my_new_project.my_first_dbt_model
+2021-07-13 02:12:19.854089 (Thread-1): Began running node model.my_new_project.my_second_model
+2021-07-13 02:12:19.854214 (Thread-1): Acquiring new bigquery connection "model.my_new_project.my_second_model".
+2021-07-13 02:12:19.854279 (Thread-1): Compiling model.my_new_project.my_second_model
+2021-07-13 02:12:19.856364 (Thread-1): Writing injected SQL for node "model.my_new_project.my_second_model"
+2021-07-13 02:12:19.870407 (Thread-1): finished collecting timing info
+2021-07-13 02:12:19.870547 (Thread-1): finished collecting timing info
+2021-07-13 02:12:19.870657 (Thread-1): Finished running node model.my_new_project.my_second_model
+2021-07-13 02:12:19.870752 (Thread-1): Began running node test.my_new_project.not_null_my_first_dbt_model_id
+2021-07-13 02:12:19.870836 (Thread-1): Acquiring new bigquery connection "test.my_new_project.not_null_my_first_dbt_model_id".
+2021-07-13 02:12:19.870895 (Thread-1): Compiling test.my_new_project.not_null_my_first_dbt_model_id
+2021-07-13 02:12:19.877862 (Thread-1): Writing injected SQL for node "test.my_new_project.not_null_my_first_dbt_model_id"
+2021-07-13 02:12:19.896718 (Thread-1): finished collecting timing info
+2021-07-13 02:12:19.896863 (Thread-1): finished collecting timing info
+2021-07-13 02:12:19.896975 (Thread-1): Finished running node test.my_new_project.not_null_my_first_dbt_model_id
+2021-07-13 02:12:19.897060 (Thread-1): Began running node test.my_new_project.unique_my_first_dbt_model_id
+2021-07-13 02:12:19.897141 (Thread-1): Acquiring new bigquery connection "test.my_new_project.unique_my_first_dbt_model_id".
+2021-07-13 02:12:19.897199 (Thread-1): Compiling test.my_new_project.unique_my_first_dbt_model_id
+2021-07-13 02:12:19.903545 (Thread-1): Writing injected SQL for node "test.my_new_project.unique_my_first_dbt_model_id"
+2021-07-13 02:12:19.919295 (Thread-1): finished collecting timing info
+2021-07-13 02:12:19.919432 (Thread-1): finished collecting timing info
+2021-07-13 02:12:19.919540 (Thread-1): Finished running node test.my_new_project.unique_my_first_dbt_model_id
+2021-07-13 02:12:19.920629 (MainThread): Connection 'master' was properly closed.
+2021-07-13 02:12:19.920736 (MainThread): Connection 'test.my_new_project.unique_my_first_dbt_model_id' was properly closed.
+2021-07-13 02:12:19.974357 (MainThread): 02:12:19 | Done.
+2021-07-13 02:12:20.021474 (MainThread): Acquiring new bigquery connection "generate_catalog".
+2021-07-13 02:12:20.021600 (MainThread): 02:12:20 | Building catalog
+2021-07-13 02:12:20.022028 (MainThread): Opening a new connection, currently in state init
+2021-07-13 02:12:20.566742 (Thread-120): handling poll request
+2021-07-13 02:12:20.567058 (Thread-120): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca56b3cd0>]}
+2021-07-13 02:12:20.568054 (Thread-120): sending response (<Response 15260 bytes [200 OK]>) to 10.0.33.106
+2021-07-13 02:12:20.960839 (ThreadPoolExecutor-1_0): Acquiring new bigquery connection "raksulcrm-dev.information_schema".
+2021-07-13 02:12:20.974260 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2021-07-13 02:12:20.978609 (ThreadPoolExecutor-1_0): On raksulcrm-dev.information_schema: 
+    with tables as (
+        select
+            project_id as table_database,
+            dataset_id as table_schema,
+            table_id as original_table_name,
+
+            concat(project_id, '.', dataset_id, '.', table_id) as relation_id,
+
+            row_count,
+            size_bytes as size_bytes,
+            case
+                when type = 1 then 'table'
+                when type = 2 then 'view'
+                else 'external'
+            end as table_type,
+
+            REGEXP_CONTAINS(table_id, '^.+[0-9]{8}$') and coalesce(type, 0) = 1 as is_date_shard,
+            REGEXP_EXTRACT(table_id, '^(.+)[0-9]{8}$') as shard_base_name,
+            REGEXP_EXTRACT(table_id, '^.+([0-9]{8})$') as shard_name
+
+        from `raksulcrm-dev`.`p_toyama`.__TABLES__
+        where (upper(dataset_id) = upper('p_toyama'))
+    ),
+
+    extracted as (
+
+        select *,
+            case
+                when is_date_shard then shard_base_name
+                else original_table_name
+            end as table_name
+
+        from tables
+
+    ),
+
+    unsharded_tables as (
+
+        select
+            table_database,
+            table_schema,
+            table_name,
+            coalesce(table_type, 'external') as table_type,
+            is_date_shard,
+
+            struct(
+                min(shard_name) as shard_min,
+                max(shard_name) as shard_max,
+                count(*) as shard_count
+            ) as table_shards,
+
+            sum(size_bytes) as size_bytes,
+            sum(row_count) as row_count,
+
+            max(relation_id) as relation_id
+
+        from extracted
+        group by 1,2,3,4,5
+
+    ),
+
+    info_schema_columns as (
+
+        select
+            concat(table_catalog, '.', table_schema, '.', table_name) as relation_id,
+            table_catalog as table_database,
+            table_schema,
+            table_name,
+
+            -- use the "real" column name from the paths query below
+            column_name as base_column_name,
+            ordinal_position as column_index,
+
+            is_partitioning_column,
+            clustering_ordinal_position
+
+        from `raksulcrm-dev`.`p_toyama`.INFORMATION_SCHEMA.COLUMNS
+        where ordinal_position is not null
+
+    ),
+
+    info_schema_column_paths as (
+
+        select
+            concat(table_catalog, '.', table_schema, '.', table_name) as relation_id,
+            field_path as column_name,
+            data_type as column_type,
+            column_name as base_column_name,
+            description as column_comment
+
+        from `raksulcrm-dev`.`p_toyama`.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS
+
+    ),
+
+    columns as (
+
+        select * except (base_column_name)
+        from info_schema_columns
+        join info_schema_column_paths using (relation_id, base_column_name)
+
+    ),
+
+    column_stats as (
+
+        select
+            table_database,
+            table_schema,
+            table_name,
+            max(relation_id) as relation_id,
+            max(case when is_partitioning_column = 'YES' then 1 else 0 end) = 1 as is_partitioned,
+            max(case when is_partitioning_column = 'YES' then column_name else null end) as partition_column,
+            max(case when clustering_ordinal_position is not null then 1 else 0 end) = 1 as is_clustered,
+            array_to_string(
+                array_agg(
+                    case
+                        when clustering_ordinal_position is not null then column_name
+                        else null
+                    end ignore nulls
+                    order by clustering_ordinal_position
+                ), ', '
+            ) as clustering_columns
+
+        from columns
+        group by 1,2,3
+
+    )
+
+    select
+        unsharded_tables.table_database,
+        unsharded_tables.table_schema,
+        case
+            when is_date_shard then concat(unsharded_tables.table_name, '*')
+            else unsharded_tables.table_name
+        end as table_name,
+        unsharded_tables.table_type,
+
+        -- coalesce name and type for External tables - these columns are not
+        -- present in the COLUMN_FIELD_PATHS resultset
+        coalesce(columns.column_name, '<unknown>') as column_name,
+        -- invent a row number to account for nested fields -- BQ does
+        -- not treat these nested properties as independent fields
+        row_number() over (
+            partition by relation_id
+            order by columns.column_index, columns.column_name
+        ) as column_index,
+        coalesce(columns.column_type, '<unknown>') as column_type,
+        columns.column_comment,
+
+        'Shard count' as `stats__date_shards__label`,
+        table_shards.shard_count as `stats__date_shards__value`,
+        'The number of date shards in this table' as `stats__date_shards__description`,
+        is_date_shard as `stats__date_shards__include`,
+
+        'Shard (min)' as `stats__date_shard_min__label`,
+        table_shards.shard_min as `stats__date_shard_min__value`,
+        'The first date shard in this table' as `stats__date_shard_min__description`,
+        is_date_shard as `stats__date_shard_min__include`,
+
+        'Shard (max)' as `stats__date_shard_max__label`,
+        table_shards.shard_max as `stats__date_shard_max__value`,
+        'The last date shard in this table' as `stats__date_shard_max__description`,
+        is_date_shard as `stats__date_shard_max__include`,
+
+        '# Rows' as `stats__num_rows__label`,
+        row_count as `stats__num_rows__value`,
+        'Approximate count of rows in this table' as `stats__num_rows__description`,
+        (unsharded_tables.table_type = 'table') as `stats__num_rows__include`,
+
+        'Approximate Size' as `stats__num_bytes__label`,
+        size_bytes as `stats__num_bytes__value`,
+        'Approximate size of table as reported by BigQuery' as `stats__num_bytes__description`,
+        (unsharded_tables.table_type = 'table') as `stats__num_bytes__include`,
+
+        'Partitioned By' as `stats__partitioning_type__label`,
+        partition_column as `stats__partitioning_type__value`,
+        'The partitioning column for this table' as `stats__partitioning_type__description`,
+        is_partitioned as `stats__partitioning_type__include`,
+
+        'Clustered By' as `stats__clustering_fields__label`,
+        clustering_columns as `stats__clustering_fields__value`,
+        'The clustering columns for this table' as `stats__clustering_fields__description`,
+        is_clustered as `stats__clustering_fields__include`
+
+    -- join using relation_id (an actual relation, not a shard prefix) to make
+    -- sure that column metadata is picked up through the join. This will only
+    -- return the column information for the "max" table in a date-sharded table set
+    from unsharded_tables
+    left join columns using (relation_id)
+    left join column_stats using (relation_id)
+  
+2021-07-13 02:12:21.915614 (Thread-121): handling poll request
+2021-07-13 02:12:21.915897 (Thread-121): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca56b3fd0>]}
+2021-07-13 02:12:21.916477 (Thread-121): sending response (<Response 8191 bytes [200 OK]>) to 10.0.4.161
+2021-07-13 02:12:23.275815 (Thread-122): handling poll request
+2021-07-13 02:12:23.276095 (Thread-122): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca56b3100>]}
+2021-07-13 02:12:23.276610 (Thread-122): sending response (<Response 299 bytes [200 OK]>) to 10.0.39.85
+2021-07-13 02:12:23.363909 (MainThread): 02:12:23 | Catalog written to /usr/src/develop/user-27625/environment-33640/repository-27865/dbt_demo_dir/target/catalog.json
+2021-07-13 02:12:24.626852 (Thread-123): handling poll request
+2021-07-13 02:12:24.627172 (Thread-123): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5903a00>]}
+2021-07-13 02:12:24.627898 (Thread-123): sending response (<Response 2365 bytes [200 OK]>) to 10.0.14.3
+2021-07-13 02:12:25.230576 (Thread-124): handling status request
+2021-07-13 02:12:25.230858 (Thread-124): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5903820>]}
+2021-07-13 02:12:25.231430 (Thread-124): sending response (<Response 887 bytes [200 OK]>) to 10.0.16.173
+2021-07-13 02:12:25.281007 (Thread-125): handling status request
+2021-07-13 02:12:25.281257 (Thread-125): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5903400>]}
+2021-07-13 02:12:25.281730 (Thread-125): sending response (<Response 887 bytes [200 OK]>) to 10.0.42.193
+2021-07-13 02:12:25.290704 (Thread-126): handling status request
+2021-07-13 02:12:25.290922 (Thread-126): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5903100>]}
+2021-07-13 02:12:25.291363 (Thread-126): sending response (<Response 887 bytes [200 OK]>) to 10.0.24.78
+2021-07-13 02:12:25.339628 (Thread-127): handling status request
+2021-07-13 02:12:25.339875 (Thread-127): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca591ffd0>]}
+2021-07-13 02:12:25.340291 (Thread-127): sending response (<Response 887 bytes [200 OK]>) to 10.0.46.218
+2021-07-13 02:14:03.194940 (Thread-128): handling status request
+2021-07-13 02:14:03.196481 (Thread-128): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca59035e0>]}
+2021-07-13 02:14:03.196998 (Thread-128): sending response (<Response 887 bytes [200 OK]>) to 10.0.24.78
+2021-07-13 02:14:03.449585 (Thread-129): handling status request
+2021-07-13 02:14:03.449933 (Thread-129): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca597b100>]}
+2021-07-13 02:14:03.450441 (Thread-129): sending response (<Response 887 bytes [200 OK]>) to 10.0.28.240
+2021-07-13 02:14:03.568133 (Thread-130): handling docs.generate request
+2021-07-13 02:14:03.568425 (Thread-130): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca597b1f0>]}
+2021-07-13 02:14:05.322112 (Thread-130): sending response (<Response 138 bytes [200 OK]>) to 10.0.24.78
+2021-07-13 02:14:05.341733 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'dcc18bf4-7988-454d-8665-3e264d0eb879', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4522c23850>]}
+2021-07-13 02:14:05.342232 (MainThread): Found 2 models, 2 tests, 0 snapshots, 0 analyses, 156 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-07-13 02:14:05.342980 (MainThread): 
+2021-07-13 02:14:05.343113 (MainThread): Acquiring new bigquery connection "master".
+2021-07-13 02:14:05.343843 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_raksulcrm-dev_p_toyama".
+2021-07-13 02:14:05.343948 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-07-13 02:14:05.789343 (Thread-131): handling poll request
+2021-07-13 02:14:05.790168 (Thread-131): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca597bcd0>]}
+2021-07-13 02:14:05.791149 (Thread-131): sending response (<Response 2225 bytes [200 OK]>) to 10.0.2.27
+2021-07-13 02:14:06.299382 (MainThread): 02:14:06 | Concurrency: 1 threads (target='default')
+2021-07-13 02:14:06.299511 (MainThread): 02:14:06 | 
+2021-07-13 02:14:06.302151 (Thread-1): Began running node model.my_new_project.my_first_dbt_model
+2021-07-13 02:14:06.302348 (Thread-1): Acquiring new bigquery connection "model.my_new_project.my_first_dbt_model".
+2021-07-13 02:14:06.302425 (Thread-1): Compiling model.my_new_project.my_first_dbt_model
+2021-07-13 02:14:06.306759 (Thread-1): Writing injected SQL for node "model.my_new_project.my_first_dbt_model"
+2021-07-13 02:14:06.330542 (Thread-1): finished collecting timing info
+2021-07-13 02:14:06.330679 (Thread-1): finished collecting timing info
+2021-07-13 02:14:06.330787 (Thread-1): Finished running node model.my_new_project.my_first_dbt_model
+2021-07-13 02:14:06.331518 (Thread-1): Began running node model.my_new_project.my_second_model
+2021-07-13 02:14:06.331643 (Thread-1): Acquiring new bigquery connection "model.my_new_project.my_second_model".
+2021-07-13 02:14:06.331707 (Thread-1): Compiling model.my_new_project.my_second_model
+2021-07-13 02:14:06.333714 (Thread-1): Writing injected SQL for node "model.my_new_project.my_second_model"
+2021-07-13 02:14:06.349417 (Thread-1): finished collecting timing info
+2021-07-13 02:14:06.349538 (Thread-1): finished collecting timing info
+2021-07-13 02:14:06.349637 (Thread-1): Finished running node model.my_new_project.my_second_model
+2021-07-13 02:14:06.349718 (Thread-1): Began running node test.my_new_project.not_null_my_first_dbt_model_id
+2021-07-13 02:14:06.349798 (Thread-1): Acquiring new bigquery connection "test.my_new_project.not_null_my_first_dbt_model_id".
+2021-07-13 02:14:06.349851 (Thread-1): Compiling test.my_new_project.not_null_my_first_dbt_model_id
+2021-07-13 02:14:06.356563 (Thread-1): Writing injected SQL for node "test.my_new_project.not_null_my_first_dbt_model_id"
+2021-07-13 02:14:06.373346 (Thread-1): finished collecting timing info
+2021-07-13 02:14:06.373466 (Thread-1): finished collecting timing info
+2021-07-13 02:14:06.373565 (Thread-1): Finished running node test.my_new_project.not_null_my_first_dbt_model_id
+2021-07-13 02:14:06.373645 (Thread-1): Began running node test.my_new_project.unique_my_first_dbt_model_id
+2021-07-13 02:14:06.373723 (Thread-1): Acquiring new bigquery connection "test.my_new_project.unique_my_first_dbt_model_id".
+2021-07-13 02:14:06.373775 (Thread-1): Compiling test.my_new_project.unique_my_first_dbt_model_id
+2021-07-13 02:14:06.379765 (Thread-1): Writing injected SQL for node "test.my_new_project.unique_my_first_dbt_model_id"
+2021-07-13 02:14:06.393614 (Thread-1): finished collecting timing info
+2021-07-13 02:14:06.393730 (Thread-1): finished collecting timing info
+2021-07-13 02:14:06.393826 (Thread-1): Finished running node test.my_new_project.unique_my_first_dbt_model_id
+2021-07-13 02:14:06.394674 (MainThread): Connection 'master' was properly closed.
+2021-07-13 02:14:06.394754 (MainThread): Connection 'test.my_new_project.unique_my_first_dbt_model_id' was properly closed.
+2021-07-13 02:14:06.450266 (MainThread): 02:14:06 | Done.
+2021-07-13 02:14:06.537556 (MainThread): Acquiring new bigquery connection "generate_catalog".
+2021-07-13 02:14:06.537685 (MainThread): 02:14:06 | Building catalog
+2021-07-13 02:14:06.538110 (MainThread): Opening a new connection, currently in state init
+2021-07-13 02:14:06.879074 (ThreadPoolExecutor-1_0): Acquiring new bigquery connection "raksulcrm-dev.information_schema".
+2021-07-13 02:14:06.892816 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2021-07-13 02:14:06.897128 (ThreadPoolExecutor-1_0): On raksulcrm-dev.information_schema: 
+    with tables as (
+        select
+            project_id as table_database,
+            dataset_id as table_schema,
+            table_id as original_table_name,
+
+            concat(project_id, '.', dataset_id, '.', table_id) as relation_id,
+
+            row_count,
+            size_bytes as size_bytes,
+            case
+                when type = 1 then 'table'
+                when type = 2 then 'view'
+                else 'external'
+            end as table_type,
+
+            REGEXP_CONTAINS(table_id, '^.+[0-9]{8}$') and coalesce(type, 0) = 1 as is_date_shard,
+            REGEXP_EXTRACT(table_id, '^(.+)[0-9]{8}$') as shard_base_name,
+            REGEXP_EXTRACT(table_id, '^.+([0-9]{8})$') as shard_name
+
+        from `raksulcrm-dev`.`p_toyama`.__TABLES__
+        where (upper(dataset_id) = upper('p_toyama'))
+    ),
+
+    extracted as (
+
+        select *,
+            case
+                when is_date_shard then shard_base_name
+                else original_table_name
+            end as table_name
+
+        from tables
+
+    ),
+
+    unsharded_tables as (
+
+        select
+            table_database,
+            table_schema,
+            table_name,
+            coalesce(table_type, 'external') as table_type,
+            is_date_shard,
+
+            struct(
+                min(shard_name) as shard_min,
+                max(shard_name) as shard_max,
+                count(*) as shard_count
+            ) as table_shards,
+
+            sum(size_bytes) as size_bytes,
+            sum(row_count) as row_count,
+
+            max(relation_id) as relation_id
+
+        from extracted
+        group by 1,2,3,4,5
+
+    ),
+
+    info_schema_columns as (
+
+        select
+            concat(table_catalog, '.', table_schema, '.', table_name) as relation_id,
+            table_catalog as table_database,
+            table_schema,
+            table_name,
+
+            -- use the "real" column name from the paths query below
+            column_name as base_column_name,
+            ordinal_position as column_index,
+
+            is_partitioning_column,
+            clustering_ordinal_position
+
+        from `raksulcrm-dev`.`p_toyama`.INFORMATION_SCHEMA.COLUMNS
+        where ordinal_position is not null
+
+    ),
+
+    info_schema_column_paths as (
+
+        select
+            concat(table_catalog, '.', table_schema, '.', table_name) as relation_id,
+            field_path as column_name,
+            data_type as column_type,
+            column_name as base_column_name,
+            description as column_comment
+
+        from `raksulcrm-dev`.`p_toyama`.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS
+
+    ),
+
+    columns as (
+
+        select * except (base_column_name)
+        from info_schema_columns
+        join info_schema_column_paths using (relation_id, base_column_name)
+
+    ),
+
+    column_stats as (
+
+        select
+            table_database,
+            table_schema,
+            table_name,
+            max(relation_id) as relation_id,
+            max(case when is_partitioning_column = 'YES' then 1 else 0 end) = 1 as is_partitioned,
+            max(case when is_partitioning_column = 'YES' then column_name else null end) as partition_column,
+            max(case when clustering_ordinal_position is not null then 1 else 0 end) = 1 as is_clustered,
+            array_to_string(
+                array_agg(
+                    case
+                        when clustering_ordinal_position is not null then column_name
+                        else null
+                    end ignore nulls
+                    order by clustering_ordinal_position
+                ), ', '
+            ) as clustering_columns
+
+        from columns
+        group by 1,2,3
+
+    )
+
+    select
+        unsharded_tables.table_database,
+        unsharded_tables.table_schema,
+        case
+            when is_date_shard then concat(unsharded_tables.table_name, '*')
+            else unsharded_tables.table_name
+        end as table_name,
+        unsharded_tables.table_type,
+
+        -- coalesce name and type for External tables - these columns are not
+        -- present in the COLUMN_FIELD_PATHS resultset
+        coalesce(columns.column_name, '<unknown>') as column_name,
+        -- invent a row number to account for nested fields -- BQ does
+        -- not treat these nested properties as independent fields
+        row_number() over (
+            partition by relation_id
+            order by columns.column_index, columns.column_name
+        ) as column_index,
+        coalesce(columns.column_type, '<unknown>') as column_type,
+        columns.column_comment,
+
+        'Shard count' as `stats__date_shards__label`,
+        table_shards.shard_count as `stats__date_shards__value`,
+        'The number of date shards in this table' as `stats__date_shards__description`,
+        is_date_shard as `stats__date_shards__include`,
+
+        'Shard (min)' as `stats__date_shard_min__label`,
+        table_shards.shard_min as `stats__date_shard_min__value`,
+        'The first date shard in this table' as `stats__date_shard_min__description`,
+        is_date_shard as `stats__date_shard_min__include`,
+
+        'Shard (max)' as `stats__date_shard_max__label`,
+        table_shards.shard_max as `stats__date_shard_max__value`,
+        'The last date shard in this table' as `stats__date_shard_max__description`,
+        is_date_shard as `stats__date_shard_max__include`,
+
+        '# Rows' as `stats__num_rows__label`,
+        row_count as `stats__num_rows__value`,
+        'Approximate count of rows in this table' as `stats__num_rows__description`,
+        (unsharded_tables.table_type = 'table') as `stats__num_rows__include`,
+
+        'Approximate Size' as `stats__num_bytes__label`,
+        size_bytes as `stats__num_bytes__value`,
+        'Approximate size of table as reported by BigQuery' as `stats__num_bytes__description`,
+        (unsharded_tables.table_type = 'table') as `stats__num_bytes__include`,
+
+        'Partitioned By' as `stats__partitioning_type__label`,
+        partition_column as `stats__partitioning_type__value`,
+        'The partitioning column for this table' as `stats__partitioning_type__description`,
+        is_partitioned as `stats__partitioning_type__include`,
+
+        'Clustered By' as `stats__clustering_fields__label`,
+        clustering_columns as `stats__clustering_fields__value`,
+        'The clustering columns for this table' as `stats__clustering_fields__description`,
+        is_clustered as `stats__clustering_fields__include`
+
+    -- join using relation_id (an actual relation, not a shard prefix) to make
+    -- sure that column metadata is picked up through the join. This will only
+    -- return the column information for the "max" table in a date-sharded table set
+    from unsharded_tables
+    left join columns using (relation_id)
+    left join column_stats using (relation_id)
+  
+2021-07-13 02:14:07.133468 (Thread-132): handling poll request
+2021-07-13 02:14:07.133755 (Thread-132): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca598dcd0>]}
+2021-07-13 02:14:07.134833 (Thread-132): sending response (<Response 23153 bytes [200 OK]>) to 10.0.3.121
+2021-07-13 02:14:08.500448 (Thread-133): handling poll request
+2021-07-13 02:14:08.500731 (Thread-133): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca598d220>]}
+2021-07-13 02:14:08.501255 (Thread-133): sending response (<Response 300 bytes [200 OK]>) to 10.0.42.193
+2021-07-13 02:14:09.207765 (MainThread): 02:14:09 | Catalog written to /usr/src/develop/user-27625/environment-33640/repository-27865/dbt_demo_dir/target/catalog.json
+2021-07-13 02:14:09.850483 (Thread-134): handling poll request
+2021-07-13 02:14:09.850778 (Thread-134): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5a6d130>]}
+2021-07-13 02:14:09.851526 (Thread-134): sending response (<Response 2365 bytes [200 OK]>) to 10.0.42.193
+2021-07-13 02:14:10.481087 (Thread-135): handling status request
+2021-07-13 02:14:10.481419 (Thread-135): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5a6d160>]}
+2021-07-13 02:14:10.481957 (Thread-135): sending response (<Response 887 bytes [200 OK]>) to 10.0.14.3
+2021-07-13 02:14:10.487235 (Thread-136): handling status request
+2021-07-13 02:14:10.487436 (Thread-136): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca53d68e0>]}
+2021-07-13 02:14:10.510890 (Thread-136): sending response (<Response 887 bytes [200 OK]>) to 10.0.16.173
+2021-07-13 02:14:10.523073 (Thread-137): handling status request
+2021-07-13 02:14:10.523270 (Thread-137): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca53d68b0>]}
+2021-07-13 02:14:10.523664 (Thread-137): sending response (<Response 887 bytes [200 OK]>) to 10.0.13.233
+2021-07-13 02:14:10.531441 (Thread-138): handling status request
+2021-07-13 02:14:10.531638 (Thread-138): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca53e0cd0>]}
+2021-07-13 02:14:10.532049 (Thread-138): sending response (<Response 887 bytes [200 OK]>) to 10.0.39.85
+2021-07-13 02:15:32.062282 (Thread-139): handling status request
+2021-07-13 02:15:32.064167 (Thread-139): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca53c4a30>]}
+2021-07-13 02:15:32.064712 (Thread-139): sending response (<Response 887 bytes [200 OK]>) to 10.0.39.85
+2021-07-13 02:15:32.258172 (Thread-140): handling status request
+2021-07-13 02:15:32.258514 (Thread-140): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5ac54f0>]}
+2021-07-13 02:15:32.259060 (Thread-140): sending response (<Response 887 bytes [200 OK]>) to 10.0.13.233
+2021-07-13 02:15:32.436811 (Thread-141): handling docs.generate request
+2021-07-13 02:15:32.437100 (Thread-141): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca584b7f0>]}
+2021-07-13 02:15:34.177632 (Thread-141): sending response (<Response 138 bytes [200 OK]>) to 10.0.4.239
+2021-07-13 02:15:34.197008 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bb0fa2a6-ed26-4923-8dbf-64b8097ee5eb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2b21c42820>]}
+2021-07-13 02:15:34.197520 (MainThread): Found 2 models, 2 tests, 0 snapshots, 0 analyses, 156 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-07-13 02:15:34.198260 (MainThread): 
+2021-07-13 02:15:34.198394 (MainThread): Acquiring new bigquery connection "master".
+2021-07-13 02:15:34.199161 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_raksulcrm-dev_p_toyama".
+2021-07-13 02:15:34.199276 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-07-13 02:15:34.504589 (MainThread): 02:15:34 | Concurrency: 1 threads (target='default')
+2021-07-13 02:15:34.504716 (MainThread): 02:15:34 | 
+2021-07-13 02:15:34.507364 (Thread-1): Began running node model.my_new_project.my_first_dbt_model
+2021-07-13 02:15:34.507545 (Thread-1): Acquiring new bigquery connection "model.my_new_project.my_first_dbt_model".
+2021-07-13 02:15:34.507619 (Thread-1): Compiling model.my_new_project.my_first_dbt_model
+2021-07-13 02:15:34.511996 (Thread-1): Writing injected SQL for node "model.my_new_project.my_first_dbt_model"
+2021-07-13 02:15:34.531275 (Thread-1): finished collecting timing info
+2021-07-13 02:15:34.531465 (Thread-1): finished collecting timing info
+2021-07-13 02:15:34.531588 (Thread-1): Finished running node model.my_new_project.my_first_dbt_model
+2021-07-13 02:15:34.532391 (Thread-1): Began running node model.my_new_project.my_second_model
+2021-07-13 02:15:34.532492 (Thread-1): Acquiring new bigquery connection "model.my_new_project.my_second_model".
+2021-07-13 02:15:34.532552 (Thread-1): Compiling model.my_new_project.my_second_model
+2021-07-13 02:15:34.534782 (Thread-1): Writing injected SQL for node "model.my_new_project.my_second_model"
+2021-07-13 02:15:34.551045 (Thread-1): finished collecting timing info
+2021-07-13 02:15:34.551198 (Thread-1): finished collecting timing info
+2021-07-13 02:15:34.551324 (Thread-1): Finished running node model.my_new_project.my_second_model
+2021-07-13 02:15:34.551415 (Thread-1): Began running node test.my_new_project.not_null_my_first_dbt_model_id
+2021-07-13 02:15:34.551504 (Thread-1): Acquiring new bigquery connection "test.my_new_project.not_null_my_first_dbt_model_id".
+2021-07-13 02:15:34.551566 (Thread-1): Compiling test.my_new_project.not_null_my_first_dbt_model_id
+2021-07-13 02:15:34.558594 (Thread-1): Writing injected SQL for node "test.my_new_project.not_null_my_first_dbt_model_id"
+2021-07-13 02:15:34.563780 (Thread-142): handling poll request
+2021-07-13 02:15:34.564060 (Thread-142): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5ac9fa0>]}
+2021-07-13 02:15:34.565215 (Thread-142): sending response (<Response 10863 bytes [200 OK]>) to 10.0.18.17
+2021-07-13 02:15:34.581306 (Thread-1): finished collecting timing info
+2021-07-13 02:15:34.581485 (Thread-1): finished collecting timing info
+2021-07-13 02:15:34.581611 (Thread-1): Finished running node test.my_new_project.not_null_my_first_dbt_model_id
+2021-07-13 02:15:34.581705 (Thread-1): Began running node test.my_new_project.unique_my_first_dbt_model_id
+2021-07-13 02:15:34.581792 (Thread-1): Acquiring new bigquery connection "test.my_new_project.unique_my_first_dbt_model_id".
+2021-07-13 02:15:34.581855 (Thread-1): Compiling test.my_new_project.unique_my_first_dbt_model_id
+2021-07-13 02:15:34.588450 (Thread-1): Writing injected SQL for node "test.my_new_project.unique_my_first_dbt_model_id"
+2021-07-13 02:15:34.613178 (Thread-1): finished collecting timing info
+2021-07-13 02:15:34.613344 (Thread-1): finished collecting timing info
+2021-07-13 02:15:34.613466 (Thread-1): Finished running node test.my_new_project.unique_my_first_dbt_model_id
+2021-07-13 02:15:34.614464 (MainThread): Connection 'master' was properly closed.
+2021-07-13 02:15:34.614562 (MainThread): Connection 'test.my_new_project.unique_my_first_dbt_model_id' was properly closed.
+2021-07-13 02:15:34.673984 (MainThread): 02:15:34 | Done.
+2021-07-13 02:15:34.745844 (MainThread): Acquiring new bigquery connection "generate_catalog".
+2021-07-13 02:15:34.745978 (MainThread): 02:15:34 | Building catalog
+2021-07-13 02:15:34.746409 (MainThread): Opening a new connection, currently in state init
+2021-07-13 02:15:35.071162 (ThreadPoolExecutor-1_0): Acquiring new bigquery connection "raksulcrm-dev.information_schema".
+2021-07-13 02:15:35.084942 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2021-07-13 02:15:35.089316 (ThreadPoolExecutor-1_0): On raksulcrm-dev.information_schema: 
+    with tables as (
+        select
+            project_id as table_database,
+            dataset_id as table_schema,
+            table_id as original_table_name,
+
+            concat(project_id, '.', dataset_id, '.', table_id) as relation_id,
+
+            row_count,
+            size_bytes as size_bytes,
+            case
+                when type = 1 then 'table'
+                when type = 2 then 'view'
+                else 'external'
+            end as table_type,
+
+            REGEXP_CONTAINS(table_id, '^.+[0-9]{8}$') and coalesce(type, 0) = 1 as is_date_shard,
+            REGEXP_EXTRACT(table_id, '^(.+)[0-9]{8}$') as shard_base_name,
+            REGEXP_EXTRACT(table_id, '^.+([0-9]{8})$') as shard_name
+
+        from `raksulcrm-dev`.`p_toyama`.__TABLES__
+        where (upper(dataset_id) = upper('p_toyama'))
+    ),
+
+    extracted as (
+
+        select *,
+            case
+                when is_date_shard then shard_base_name
+                else original_table_name
+            end as table_name
+
+        from tables
+
+    ),
+
+    unsharded_tables as (
+
+        select
+            table_database,
+            table_schema,
+            table_name,
+            coalesce(table_type, 'external') as table_type,
+            is_date_shard,
+
+            struct(
+                min(shard_name) as shard_min,
+                max(shard_name) as shard_max,
+                count(*) as shard_count
+            ) as table_shards,
+
+            sum(size_bytes) as size_bytes,
+            sum(row_count) as row_count,
+
+            max(relation_id) as relation_id
+
+        from extracted
+        group by 1,2,3,4,5
+
+    ),
+
+    info_schema_columns as (
+
+        select
+            concat(table_catalog, '.', table_schema, '.', table_name) as relation_id,
+            table_catalog as table_database,
+            table_schema,
+            table_name,
+
+            -- use the "real" column name from the paths query below
+            column_name as base_column_name,
+            ordinal_position as column_index,
+
+            is_partitioning_column,
+            clustering_ordinal_position
+
+        from `raksulcrm-dev`.`p_toyama`.INFORMATION_SCHEMA.COLUMNS
+        where ordinal_position is not null
+
+    ),
+
+    info_schema_column_paths as (
+
+        select
+            concat(table_catalog, '.', table_schema, '.', table_name) as relation_id,
+            field_path as column_name,
+            data_type as column_type,
+            column_name as base_column_name,
+            description as column_comment
+
+        from `raksulcrm-dev`.`p_toyama`.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS
+
+    ),
+
+    columns as (
+
+        select * except (base_column_name)
+        from info_schema_columns
+        join info_schema_column_paths using (relation_id, base_column_name)
+
+    ),
+
+    column_stats as (
+
+        select
+            table_database,
+            table_schema,
+            table_name,
+            max(relation_id) as relation_id,
+            max(case when is_partitioning_column = 'YES' then 1 else 0 end) = 1 as is_partitioned,
+            max(case when is_partitioning_column = 'YES' then column_name else null end) as partition_column,
+            max(case when clustering_ordinal_position is not null then 1 else 0 end) = 1 as is_clustered,
+            array_to_string(
+                array_agg(
+                    case
+                        when clustering_ordinal_position is not null then column_name
+                        else null
+                    end ignore nulls
+                    order by clustering_ordinal_position
+                ), ', '
+            ) as clustering_columns
+
+        from columns
+        group by 1,2,3
+
+    )
+
+    select
+        unsharded_tables.table_database,
+        unsharded_tables.table_schema,
+        case
+            when is_date_shard then concat(unsharded_tables.table_name, '*')
+            else unsharded_tables.table_name
+        end as table_name,
+        unsharded_tables.table_type,
+
+        -- coalesce name and type for External tables - these columns are not
+        -- present in the COLUMN_FIELD_PATHS resultset
+        coalesce(columns.column_name, '<unknown>') as column_name,
+        -- invent a row number to account for nested fields -- BQ does
+        -- not treat these nested properties as independent fields
+        row_number() over (
+            partition by relation_id
+            order by columns.column_index, columns.column_name
+        ) as column_index,
+        coalesce(columns.column_type, '<unknown>') as column_type,
+        columns.column_comment,
+
+        'Shard count' as `stats__date_shards__label`,
+        table_shards.shard_count as `stats__date_shards__value`,
+        'The number of date shards in this table' as `stats__date_shards__description`,
+        is_date_shard as `stats__date_shards__include`,
+
+        'Shard (min)' as `stats__date_shard_min__label`,
+        table_shards.shard_min as `stats__date_shard_min__value`,
+        'The first date shard in this table' as `stats__date_shard_min__description`,
+        is_date_shard as `stats__date_shard_min__include`,
+
+        'Shard (max)' as `stats__date_shard_max__label`,
+        table_shards.shard_max as `stats__date_shard_max__value`,
+        'The last date shard in this table' as `stats__date_shard_max__description`,
+        is_date_shard as `stats__date_shard_max__include`,
+
+        '# Rows' as `stats__num_rows__label`,
+        row_count as `stats__num_rows__value`,
+        'Approximate count of rows in this table' as `stats__num_rows__description`,
+        (unsharded_tables.table_type = 'table') as `stats__num_rows__include`,
+
+        'Approximate Size' as `stats__num_bytes__label`,
+        size_bytes as `stats__num_bytes__value`,
+        'Approximate size of table as reported by BigQuery' as `stats__num_bytes__description`,
+        (unsharded_tables.table_type = 'table') as `stats__num_bytes__include`,
+
+        'Partitioned By' as `stats__partitioning_type__label`,
+        partition_column as `stats__partitioning_type__value`,
+        'The partitioning column for this table' as `stats__partitioning_type__description`,
+        is_partitioned as `stats__partitioning_type__include`,
+
+        'Clustered By' as `stats__clustering_fields__label`,
+        clustering_columns as `stats__clustering_fields__value`,
+        'The clustering columns for this table' as `stats__clustering_fields__description`,
+        is_clustered as `stats__clustering_fields__include`
+
+    -- join using relation_id (an actual relation, not a shard prefix) to make
+    -- sure that column metadata is picked up through the join. This will only
+    -- return the column information for the "max" table in a date-sharded table set
+    from unsharded_tables
+    left join columns using (relation_id)
+    left join column_stats using (relation_id)
+  
+2021-07-13 02:15:35.948725 (Thread-143): handling poll request
+2021-07-13 02:15:35.949017 (Thread-143): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca598dee0>]}
+2021-07-13 02:15:35.949825 (Thread-143): sending response (<Response 14509 bytes [200 OK]>) to 10.0.4.239
+2021-07-13 02:15:37.284495 (Thread-144): handling poll request
+2021-07-13 02:15:37.284789 (Thread-144): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca598d8b0>]}
+2021-07-13 02:15:37.285320 (Thread-144): sending response (<Response 297 bytes [200 OK]>) to 10.0.16.173
+2021-07-13 02:15:37.428822 (MainThread): 02:15:37 | Catalog written to /usr/src/develop/user-27625/environment-33640/repository-27865/dbt_demo_dir/target/catalog.json
+2021-07-13 02:15:38.671712 (Thread-145): handling poll request
+2021-07-13 02:15:38.672005 (Thread-145): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca535fd30>]}
+2021-07-13 02:15:38.672728 (Thread-145): sending response (<Response 2362 bytes [200 OK]>) to 10.0.42.193
+2021-07-13 02:15:39.288408 (Thread-146): handling status request
+2021-07-13 02:15:39.288713 (Thread-146): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca535fdf0>]}
+2021-07-13 02:15:39.289249 (Thread-146): sending response (<Response 887 bytes [200 OK]>) to 10.0.24.78
+2021-07-13 02:15:39.294128 (Thread-147): handling status request
+2021-07-13 02:15:39.294352 (Thread-147): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5366070>]}
+2021-07-13 02:15:39.294807 (Thread-147): sending response (<Response 887 bytes [200 OK]>) to 10.0.29.103
+2021-07-13 02:15:39.334455 (Thread-148): handling status request
+2021-07-13 02:15:39.334842 (Thread-148): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5366040>]}
+2021-07-13 02:15:39.335543 (Thread-148): sending response (<Response 887 bytes [200 OK]>) to 10.0.27.46
+2021-07-13 02:15:39.394277 (Thread-149): handling status request
+2021-07-13 02:15:39.394582 (Thread-149): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5366250>]}
+2021-07-13 02:15:39.395115 (Thread-149): sending response (<Response 887 bytes [200 OK]>) to 10.0.24.78
+2021-07-13 02:25:51.803338 (Thread-150): handling status request
+2021-07-13 02:25:51.805082 (Thread-150): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5366400>]}
+2021-07-13 02:25:51.805596 (Thread-150): sending response (<Response 887 bytes [200 OK]>) to 10.0.3.121
+2021-07-13 02:25:52.066497 (Thread-151): handling status request
+2021-07-13 02:25:52.066812 (Thread-151): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca53665b0>]}
+2021-07-13 02:25:52.067362 (Thread-151): sending response (<Response 887 bytes [200 OK]>) to 10.0.43.149
+2021-07-13 02:25:52.167803 (Thread-152): handling docs.generate request
+2021-07-13 02:25:52.168111 (Thread-152): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5366760>]}
+2021-07-13 02:25:53.904374 (Thread-152): sending response (<Response 138 bytes [200 OK]>) to 10.0.4.161
+2021-07-13 02:25:53.929421 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '62353e3e-9097-4a72-a115-944a5644f280', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f26e5b16760>]}
+2021-07-13 02:25:53.929978 (MainThread): Found 2 models, 2 tests, 0 snapshots, 0 analyses, 156 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-07-13 02:25:53.930925 (MainThread): 
+2021-07-13 02:25:53.931072 (MainThread): Acquiring new bigquery connection "master".
+2021-07-13 02:25:53.931833 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_raksulcrm-dev_p_toyama".
+2021-07-13 02:25:53.931938 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-07-13 02:25:54.224883 (Thread-153): handling poll request
+2021-07-13 02:25:54.225237 (Thread-153): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca52ed820>]}
+2021-07-13 02:25:54.226165 (Thread-153): sending response (<Response 2225 bytes [200 OK]>) to 10.0.28.240
+2021-07-13 02:25:54.234464 (MainThread): 02:25:54 | Concurrency: 1 threads (target='default')
+2021-07-13 02:25:54.234587 (MainThread): 02:25:54 | 
+2021-07-13 02:25:54.237335 (Thread-1): Began running node model.my_new_project.my_first_dbt_model
+2021-07-13 02:25:54.237535 (Thread-1): Acquiring new bigquery connection "model.my_new_project.my_first_dbt_model".
+2021-07-13 02:25:54.237615 (Thread-1): Compiling model.my_new_project.my_first_dbt_model
+2021-07-13 02:25:54.242063 (Thread-1): Writing injected SQL for node "model.my_new_project.my_first_dbt_model"
+2021-07-13 02:25:54.264549 (Thread-1): finished collecting timing info
+2021-07-13 02:25:54.264700 (Thread-1): finished collecting timing info
+2021-07-13 02:25:54.264822 (Thread-1): Finished running node model.my_new_project.my_first_dbt_model
+2021-07-13 02:25:54.265460 (Thread-1): Began running node model.my_new_project.my_second_model
+2021-07-13 02:25:54.265562 (Thread-1): Acquiring new bigquery connection "model.my_new_project.my_second_model".
+2021-07-13 02:25:54.265630 (Thread-1): Compiling model.my_new_project.my_second_model
+2021-07-13 02:25:54.267845 (Thread-1): Writing injected SQL for node "model.my_new_project.my_second_model"
+2021-07-13 02:25:54.283145 (Thread-1): finished collecting timing info
+2021-07-13 02:25:54.283287 (Thread-1): finished collecting timing info
+2021-07-13 02:25:54.283396 (Thread-1): Finished running node model.my_new_project.my_second_model
+2021-07-13 02:25:54.283483 (Thread-1): Began running node test.my_new_project.not_null_my_first_dbt_model_id
+2021-07-13 02:25:54.283569 (Thread-1): Acquiring new bigquery connection "test.my_new_project.not_null_my_first_dbt_model_id".
+2021-07-13 02:25:54.283625 (Thread-1): Compiling test.my_new_project.not_null_my_first_dbt_model_id
+2021-07-13 02:25:54.290771 (Thread-1): Writing injected SQL for node "test.my_new_project.not_null_my_first_dbt_model_id"
+2021-07-13 02:25:54.309982 (Thread-1): finished collecting timing info
+2021-07-13 02:25:54.310135 (Thread-1): finished collecting timing info
+2021-07-13 02:25:54.310244 (Thread-1): Finished running node test.my_new_project.not_null_my_first_dbt_model_id
+2021-07-13 02:25:54.310329 (Thread-1): Began running node test.my_new_project.unique_my_first_dbt_model_id
+2021-07-13 02:25:54.310409 (Thread-1): Acquiring new bigquery connection "test.my_new_project.unique_my_first_dbt_model_id".
+2021-07-13 02:25:54.310466 (Thread-1): Compiling test.my_new_project.unique_my_first_dbt_model_id
+2021-07-13 02:25:54.316989 (Thread-1): Writing injected SQL for node "test.my_new_project.unique_my_first_dbt_model_id"
+2021-07-13 02:25:54.334769 (Thread-1): finished collecting timing info
+2021-07-13 02:25:54.334944 (Thread-1): finished collecting timing info
+2021-07-13 02:25:54.335059 (Thread-1): Finished running node test.my_new_project.unique_my_first_dbt_model_id
+2021-07-13 02:25:54.336075 (MainThread): Connection 'master' was properly closed.
+2021-07-13 02:25:54.336163 (MainThread): Connection 'test.my_new_project.unique_my_first_dbt_model_id' was properly closed.
+2021-07-13 02:25:54.391007 (MainThread): 02:25:54 | Done.
+2021-07-13 02:25:54.462624 (MainThread): Acquiring new bigquery connection "generate_catalog".
+2021-07-13 02:25:54.462763 (MainThread): 02:25:54 | Building catalog
+2021-07-13 02:25:54.463222 (MainThread): Opening a new connection, currently in state init
+2021-07-13 02:25:54.786435 (ThreadPoolExecutor-1_0): Acquiring new bigquery connection "raksulcrm-dev.information_schema".
+2021-07-13 02:25:54.800863 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2021-07-13 02:25:54.805180 (ThreadPoolExecutor-1_0): On raksulcrm-dev.information_schema: 
+    with tables as (
+        select
+            project_id as table_database,
+            dataset_id as table_schema,
+            table_id as original_table_name,
+
+            concat(project_id, '.', dataset_id, '.', table_id) as relation_id,
+
+            row_count,
+            size_bytes as size_bytes,
+            case
+                when type = 1 then 'table'
+                when type = 2 then 'view'
+                else 'external'
+            end as table_type,
+
+            REGEXP_CONTAINS(table_id, '^.+[0-9]{8}$') and coalesce(type, 0) = 1 as is_date_shard,
+            REGEXP_EXTRACT(table_id, '^(.+)[0-9]{8}$') as shard_base_name,
+            REGEXP_EXTRACT(table_id, '^.+([0-9]{8})$') as shard_name
+
+        from `raksulcrm-dev`.`p_toyama`.__TABLES__
+        where (upper(dataset_id) = upper('p_toyama'))
+    ),
+
+    extracted as (
+
+        select *,
+            case
+                when is_date_shard then shard_base_name
+                else original_table_name
+            end as table_name
+
+        from tables
+
+    ),
+
+    unsharded_tables as (
+
+        select
+            table_database,
+            table_schema,
+            table_name,
+            coalesce(table_type, 'external') as table_type,
+            is_date_shard,
+
+            struct(
+                min(shard_name) as shard_min,
+                max(shard_name) as shard_max,
+                count(*) as shard_count
+            ) as table_shards,
+
+            sum(size_bytes) as size_bytes,
+            sum(row_count) as row_count,
+
+            max(relation_id) as relation_id
+
+        from extracted
+        group by 1,2,3,4,5
+
+    ),
+
+    info_schema_columns as (
+
+        select
+            concat(table_catalog, '.', table_schema, '.', table_name) as relation_id,
+            table_catalog as table_database,
+            table_schema,
+            table_name,
+
+            -- use the "real" column name from the paths query below
+            column_name as base_column_name,
+            ordinal_position as column_index,
+
+            is_partitioning_column,
+            clustering_ordinal_position
+
+        from `raksulcrm-dev`.`p_toyama`.INFORMATION_SCHEMA.COLUMNS
+        where ordinal_position is not null
+
+    ),
+
+    info_schema_column_paths as (
+
+        select
+            concat(table_catalog, '.', table_schema, '.', table_name) as relation_id,
+            field_path as column_name,
+            data_type as column_type,
+            column_name as base_column_name,
+            description as column_comment
+
+        from `raksulcrm-dev`.`p_toyama`.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS
+
+    ),
+
+    columns as (
+
+        select * except (base_column_name)
+        from info_schema_columns
+        join info_schema_column_paths using (relation_id, base_column_name)
+
+    ),
+
+    column_stats as (
+
+        select
+            table_database,
+            table_schema,
+            table_name,
+            max(relation_id) as relation_id,
+            max(case when is_partitioning_column = 'YES' then 1 else 0 end) = 1 as is_partitioned,
+            max(case when is_partitioning_column = 'YES' then column_name else null end) as partition_column,
+            max(case when clustering_ordinal_position is not null then 1 else 0 end) = 1 as is_clustered,
+            array_to_string(
+                array_agg(
+                    case
+                        when clustering_ordinal_position is not null then column_name
+                        else null
+                    end ignore nulls
+                    order by clustering_ordinal_position
+                ), ', '
+            ) as clustering_columns
+
+        from columns
+        group by 1,2,3
+
+    )
+
+    select
+        unsharded_tables.table_database,
+        unsharded_tables.table_schema,
+        case
+            when is_date_shard then concat(unsharded_tables.table_name, '*')
+            else unsharded_tables.table_name
+        end as table_name,
+        unsharded_tables.table_type,
+
+        -- coalesce name and type for External tables - these columns are not
+        -- present in the COLUMN_FIELD_PATHS resultset
+        coalesce(columns.column_name, '<unknown>') as column_name,
+        -- invent a row number to account for nested fields -- BQ does
+        -- not treat these nested properties as independent fields
+        row_number() over (
+            partition by relation_id
+            order by columns.column_index, columns.column_name
+        ) as column_index,
+        coalesce(columns.column_type, '<unknown>') as column_type,
+        columns.column_comment,
+
+        'Shard count' as `stats__date_shards__label`,
+        table_shards.shard_count as `stats__date_shards__value`,
+        'The number of date shards in this table' as `stats__date_shards__description`,
+        is_date_shard as `stats__date_shards__include`,
+
+        'Shard (min)' as `stats__date_shard_min__label`,
+        table_shards.shard_min as `stats__date_shard_min__value`,
+        'The first date shard in this table' as `stats__date_shard_min__description`,
+        is_date_shard as `stats__date_shard_min__include`,
+
+        'Shard (max)' as `stats__date_shard_max__label`,
+        table_shards.shard_max as `stats__date_shard_max__value`,
+        'The last date shard in this table' as `stats__date_shard_max__description`,
+        is_date_shard as `stats__date_shard_max__include`,
+
+        '# Rows' as `stats__num_rows__label`,
+        row_count as `stats__num_rows__value`,
+        'Approximate count of rows in this table' as `stats__num_rows__description`,
+        (unsharded_tables.table_type = 'table') as `stats__num_rows__include`,
+
+        'Approximate Size' as `stats__num_bytes__label`,
+        size_bytes as `stats__num_bytes__value`,
+        'Approximate size of table as reported by BigQuery' as `stats__num_bytes__description`,
+        (unsharded_tables.table_type = 'table') as `stats__num_bytes__include`,
+
+        'Partitioned By' as `stats__partitioning_type__label`,
+        partition_column as `stats__partitioning_type__value`,
+        'The partitioning column for this table' as `stats__partitioning_type__description`,
+        is_partitioned as `stats__partitioning_type__include`,
+
+        'Clustered By' as `stats__clustering_fields__label`,
+        clustering_columns as `stats__clustering_fields__value`,
+        'The clustering columns for this table' as `stats__clustering_fields__description`,
+        is_clustered as `stats__clustering_fields__include`
+
+    -- join using relation_id (an actual relation, not a shard prefix) to make
+    -- sure that column metadata is picked up through the join. This will only
+    -- return the column information for the "max" table in a date-sharded table set
+    from unsharded_tables
+    left join columns using (relation_id)
+    left join column_stats using (relation_id)
+  
+2021-07-13 02:25:55.573773 (Thread-154): handling poll request
+2021-07-13 02:25:55.574068 (Thread-154): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca535fdc0>]}
+2021-07-13 02:25:55.575104 (Thread-154): sending response (<Response 23153 bytes [200 OK]>) to 10.0.4.239
+2021-07-13 02:25:56.901329 (MainThread): 02:25:56 | Catalog written to /usr/src/develop/user-27625/environment-33640/repository-27865/dbt_demo_dir/target/catalog.json
+2021-07-13 02:25:56.927559 (Thread-155): handling poll request
+2021-07-13 02:25:56.927889 (Thread-155): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca598d6d0>]}
+2021-07-13 02:25:56.928437 (Thread-155): sending response (<Response 656 bytes [200 OK]>) to 10.0.3.121
+2021-07-13 02:25:58.293248 (Thread-156): handling poll request
+2021-07-13 02:25:58.293541 (Thread-156): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca53445b0>]}
+2021-07-13 02:25:58.294225 (Thread-156): sending response (<Response 2009 bytes [200 OK]>) to 10.0.39.85
+2021-07-13 02:25:58.921100 (Thread-157): handling status request
+2021-07-13 02:25:58.921398 (Thread-157): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca53447f0>]}
+2021-07-13 02:25:58.922092 (Thread-157): sending response (<Response 887 bytes [200 OK]>) to 10.0.27.46
+2021-07-13 02:25:58.943452 (Thread-158): handling status request
+2021-07-13 02:25:58.943772 (Thread-158): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca535f400>]}
+2021-07-13 02:25:58.944265 (Thread-158): sending response (<Response 887 bytes [200 OK]>) to 10.0.28.240
+2021-07-13 02:25:58.968251 (Thread-159): handling status request
+2021-07-13 02:25:58.968512 (Thread-159): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca533ab50>]}
+2021-07-13 02:25:58.969021 (Thread-159): sending response (<Response 887 bytes [200 OK]>) to 10.0.42.92
+2021-07-13 02:25:59.064791 (Thread-160): handling status request
+2021-07-13 02:25:59.065074 (Thread-160): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca533aa90>]}
+2021-07-13 02:25:59.065578 (Thread-160): sending response (<Response 887 bytes [200 OK]>) to 10.0.46.218
+2021-07-13 02:29:56.566812 (Thread-161): handling status request
+2021-07-13 02:29:56.567140 (Thread-161): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca533a0a0>]}
+2021-07-13 02:29:56.567633 (Thread-161): sending response (<Response 887 bytes [200 OK]>) to 10.0.27.46
+2021-07-13 02:29:56.603663 (Thread-162): handling ps request
+2021-07-13 02:29:56.604137 (Thread-162): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca533a520>]}
+2021-07-13 02:29:56.604593 (Thread-163): handling status request
+2021-07-13 02:29:56.605454 (Thread-162): sending response (<Response 2598 bytes [200 OK]>) to 10.0.3.121
+2021-07-13 02:29:56.605763 (Thread-163): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca533a310>]}
+2021-07-13 02:29:56.606437 (Thread-163): sending response (<Response 887 bytes [200 OK]>) to 10.0.29.103
+2021-07-13 02:29:56.610524 (Thread-164): handling status request
+2021-07-13 02:29:56.610705 (Thread-164): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca533ab20>]}
+2021-07-13 02:29:56.611106 (Thread-164): sending response (<Response 887 bytes [200 OK]>) to 10.0.24.78
+2021-07-13 02:29:56.691050 (Thread-165): handling status request
+2021-07-13 02:29:56.691383 (Thread-165): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca535f400>]}
+2021-07-13 02:29:56.691897 (Thread-165): sending response (<Response 887 bytes [200 OK]>) to 10.0.2.27
+2021-07-13 02:29:57.208667 (Thread-166): handling poll request
+2021-07-13 02:29:57.208960 (Thread-166): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca533a190>]}
+2021-07-13 02:29:57.231357 (Thread-166): sending response (<Response 27147 bytes [200 OK]>) to 10.0.28.240
+2021-07-13 02:29:58.003478 (Thread-167): handling status request
+2021-07-13 02:29:58.003775 (Thread-167): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca53308e0>]}
+2021-07-13 02:29:58.004270 (Thread-167): sending response (<Response 887 bytes [200 OK]>) to 10.0.2.27
+2021-07-13 02:29:58.006098 (Thread-168): handling status request
+2021-07-13 02:29:58.006306 (Thread-168): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5330e20>]}
+2021-07-13 02:29:58.006694 (Thread-168): sending response (<Response 887 bytes [200 OK]>) to 10.0.16.173
+2021-07-13 02:29:58.012604 (Thread-169): handling status request
+2021-07-13 02:29:58.012815 (Thread-169): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca55cb490>]}
+2021-07-13 02:29:58.013172 (Thread-169): sending response (<Response 887 bytes [200 OK]>) to 10.0.28.240
+2021-07-13 03:02:49.738575 (Thread-170): handling status request
+2021-07-13 03:02:49.740321 (Thread-170): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5330850>]}
+2021-07-13 03:02:49.740856 (Thread-170): sending response (<Response 887 bytes [200 OK]>) to 10.0.2.27
+2021-07-13 03:02:50.019908 (Thread-171): handling status request
+2021-07-13 03:02:50.020263 (Thread-171): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca55cb490>]}
+2021-07-13 03:02:50.020819 (Thread-171): sending response (<Response 887 bytes [200 OK]>) to 10.0.14.3
+2021-07-13 03:02:50.066325 (Thread-172): handling docs.generate request
+2021-07-13 03:02:50.066575 (Thread-172): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca53306d0>]}
+2021-07-13 03:02:51.796313 (Thread-172): sending response (<Response 138 bytes [200 OK]>) to 10.0.16.173
+2021-07-13 03:02:51.815346 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1721ce9e-7745-4a3e-9798-7d57cae2e092', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fedeaee1910>]}
+2021-07-13 03:02:51.815859 (MainThread): Found 2 models, 2 tests, 0 snapshots, 0 analyses, 156 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-07-13 03:02:51.816592 (MainThread): 
+2021-07-13 03:02:51.816723 (MainThread): Acquiring new bigquery connection "master".
+2021-07-13 03:02:51.817444 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_raksulcrm-dev_p_toyama".
+2021-07-13 03:02:51.817553 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-07-13 03:02:52.123373 (MainThread): 03:02:52 | Concurrency: 1 threads (target='default')
+2021-07-13 03:02:52.123500 (MainThread): 03:02:52 | 
+2021-07-13 03:02:52.126151 (Thread-1): Began running node model.my_new_project.my_first_dbt_model
+2021-07-13 03:02:52.126330 (Thread-1): Acquiring new bigquery connection "model.my_new_project.my_first_dbt_model".
+2021-07-13 03:02:52.126405 (Thread-1): Compiling model.my_new_project.my_first_dbt_model
+2021-07-13 03:02:52.130747 (Thread-1): Writing injected SQL for node "model.my_new_project.my_first_dbt_model"
+2021-07-13 03:02:52.153570 (Thread-1): finished collecting timing info
+2021-07-13 03:02:52.153708 (Thread-1): finished collecting timing info
+2021-07-13 03:02:52.153818 (Thread-1): Finished running node model.my_new_project.my_first_dbt_model
+2021-07-13 03:02:52.154562 (Thread-1): Began running node model.my_new_project.my_second_model
+2021-07-13 03:02:52.154661 (Thread-1): Acquiring new bigquery connection "model.my_new_project.my_second_model".
+2021-07-13 03:02:52.154719 (Thread-1): Compiling model.my_new_project.my_second_model
+2021-07-13 03:02:52.156804 (Thread-1): Writing injected SQL for node "model.my_new_project.my_second_model"
+2021-07-13 03:02:52.175450 (Thread-1): finished collecting timing info
+2021-07-13 03:02:52.175586 (Thread-1): finished collecting timing info
+2021-07-13 03:02:52.175692 (Thread-1): Finished running node model.my_new_project.my_second_model
+2021-07-13 03:02:52.175778 (Thread-1): Began running node test.my_new_project.not_null_my_first_dbt_model_id
+2021-07-13 03:02:52.175860 (Thread-1): Acquiring new bigquery connection "test.my_new_project.not_null_my_first_dbt_model_id".
+2021-07-13 03:02:52.175915 (Thread-1): Compiling test.my_new_project.not_null_my_first_dbt_model_id
+2021-07-13 03:02:52.182663 (Thread-1): Writing injected SQL for node "test.my_new_project.not_null_my_first_dbt_model_id"
+2021-07-13 03:02:52.200089 (Thread-1): finished collecting timing info
+2021-07-13 03:02:52.200217 (Thread-1): finished collecting timing info
+2021-07-13 03:02:52.200321 (Thread-1): Finished running node test.my_new_project.not_null_my_first_dbt_model_id
+2021-07-13 03:02:52.200403 (Thread-1): Began running node test.my_new_project.unique_my_first_dbt_model_id
+2021-07-13 03:02:52.200479 (Thread-1): Acquiring new bigquery connection "test.my_new_project.unique_my_first_dbt_model_id".
+2021-07-13 03:02:52.200533 (Thread-1): Compiling test.my_new_project.unique_my_first_dbt_model_id
+2021-07-13 03:02:52.206511 (Thread-1): Writing injected SQL for node "test.my_new_project.unique_my_first_dbt_model_id"
+2021-07-13 03:02:52.221634 (Thread-1): finished collecting timing info
+2021-07-13 03:02:52.221756 (Thread-1): finished collecting timing info
+2021-07-13 03:02:52.221857 (Thread-1): Finished running node test.my_new_project.unique_my_first_dbt_model_id
+2021-07-13 03:02:52.222784 (MainThread): Connection 'master' was properly closed.
+2021-07-13 03:02:52.222866 (MainThread): Connection 'test.my_new_project.unique_my_first_dbt_model_id' was properly closed.
+2021-07-13 03:02:52.255411 (Thread-173): handling poll request
+2021-07-13 03:02:52.255679 (Thread-173): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca535f850>]}
+2021-07-13 03:02:52.256901 (Thread-173): sending response (<Response 16141 bytes [200 OK]>) to 10.0.46.218
+2021-07-13 03:02:52.282497 (MainThread): 03:02:52 | Done.
+2021-07-13 03:02:52.369349 (MainThread): Acquiring new bigquery connection "generate_catalog".
+2021-07-13 03:02:52.369483 (MainThread): 03:02:52 | Building catalog
+2021-07-13 03:02:52.369911 (MainThread): Opening a new connection, currently in state init
+2021-07-13 03:02:52.738247 (ThreadPoolExecutor-1_0): Acquiring new bigquery connection "raksulcrm-dev.information_schema".
+2021-07-13 03:02:52.752026 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2021-07-13 03:02:52.756360 (ThreadPoolExecutor-1_0): On raksulcrm-dev.information_schema: 
+    with tables as (
+        select
+            project_id as table_database,
+            dataset_id as table_schema,
+            table_id as original_table_name,
+
+            concat(project_id, '.', dataset_id, '.', table_id) as relation_id,
+
+            row_count,
+            size_bytes as size_bytes,
+            case
+                when type = 1 then 'table'
+                when type = 2 then 'view'
+                else 'external'
+            end as table_type,
+
+            REGEXP_CONTAINS(table_id, '^.+[0-9]{8}$') and coalesce(type, 0) = 1 as is_date_shard,
+            REGEXP_EXTRACT(table_id, '^(.+)[0-9]{8}$') as shard_base_name,
+            REGEXP_EXTRACT(table_id, '^.+([0-9]{8})$') as shard_name
+
+        from `raksulcrm-dev`.`p_toyama`.__TABLES__
+        where (upper(dataset_id) = upper('p_toyama'))
+    ),
+
+    extracted as (
+
+        select *,
+            case
+                when is_date_shard then shard_base_name
+                else original_table_name
+            end as table_name
+
+        from tables
+
+    ),
+
+    unsharded_tables as (
+
+        select
+            table_database,
+            table_schema,
+            table_name,
+            coalesce(table_type, 'external') as table_type,
+            is_date_shard,
+
+            struct(
+                min(shard_name) as shard_min,
+                max(shard_name) as shard_max,
+                count(*) as shard_count
+            ) as table_shards,
+
+            sum(size_bytes) as size_bytes,
+            sum(row_count) as row_count,
+
+            max(relation_id) as relation_id
+
+        from extracted
+        group by 1,2,3,4,5
+
+    ),
+
+    info_schema_columns as (
+
+        select
+            concat(table_catalog, '.', table_schema, '.', table_name) as relation_id,
+            table_catalog as table_database,
+            table_schema,
+            table_name,
+
+            -- use the "real" column name from the paths query below
+            column_name as base_column_name,
+            ordinal_position as column_index,
+
+            is_partitioning_column,
+            clustering_ordinal_position
+
+        from `raksulcrm-dev`.`p_toyama`.INFORMATION_SCHEMA.COLUMNS
+        where ordinal_position is not null
+
+    ),
+
+    info_schema_column_paths as (
+
+        select
+            concat(table_catalog, '.', table_schema, '.', table_name) as relation_id,
+            field_path as column_name,
+            data_type as column_type,
+            column_name as base_column_name,
+            description as column_comment
+
+        from `raksulcrm-dev`.`p_toyama`.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS
+
+    ),
+
+    columns as (
+
+        select * except (base_column_name)
+        from info_schema_columns
+        join info_schema_column_paths using (relation_id, base_column_name)
+
+    ),
+
+    column_stats as (
+
+        select
+            table_database,
+            table_schema,
+            table_name,
+            max(relation_id) as relation_id,
+            max(case when is_partitioning_column = 'YES' then 1 else 0 end) = 1 as is_partitioned,
+            max(case when is_partitioning_column = 'YES' then column_name else null end) as partition_column,
+            max(case when clustering_ordinal_position is not null then 1 else 0 end) = 1 as is_clustered,
+            array_to_string(
+                array_agg(
+                    case
+                        when clustering_ordinal_position is not null then column_name
+                        else null
+                    end ignore nulls
+                    order by clustering_ordinal_position
+                ), ', '
+            ) as clustering_columns
+
+        from columns
+        group by 1,2,3
+
+    )
+
+    select
+        unsharded_tables.table_database,
+        unsharded_tables.table_schema,
+        case
+            when is_date_shard then concat(unsharded_tables.table_name, '*')
+            else unsharded_tables.table_name
+        end as table_name,
+        unsharded_tables.table_type,
+
+        -- coalesce name and type for External tables - these columns are not
+        -- present in the COLUMN_FIELD_PATHS resultset
+        coalesce(columns.column_name, '<unknown>') as column_name,
+        -- invent a row number to account for nested fields -- BQ does
+        -- not treat these nested properties as independent fields
+        row_number() over (
+            partition by relation_id
+            order by columns.column_index, columns.column_name
+        ) as column_index,
+        coalesce(columns.column_type, '<unknown>') as column_type,
+        columns.column_comment,
+
+        'Shard count' as `stats__date_shards__label`,
+        table_shards.shard_count as `stats__date_shards__value`,
+        'The number of date shards in this table' as `stats__date_shards__description`,
+        is_date_shard as `stats__date_shards__include`,
+
+        'Shard (min)' as `stats__date_shard_min__label`,
+        table_shards.shard_min as `stats__date_shard_min__value`,
+        'The first date shard in this table' as `stats__date_shard_min__description`,
+        is_date_shard as `stats__date_shard_min__include`,
+
+        'Shard (max)' as `stats__date_shard_max__label`,
+        table_shards.shard_max as `stats__date_shard_max__value`,
+        'The last date shard in this table' as `stats__date_shard_max__description`,
+        is_date_shard as `stats__date_shard_max__include`,
+
+        '# Rows' as `stats__num_rows__label`,
+        row_count as `stats__num_rows__value`,
+        'Approximate count of rows in this table' as `stats__num_rows__description`,
+        (unsharded_tables.table_type = 'table') as `stats__num_rows__include`,
+
+        'Approximate Size' as `stats__num_bytes__label`,
+        size_bytes as `stats__num_bytes__value`,
+        'Approximate size of table as reported by BigQuery' as `stats__num_bytes__description`,
+        (unsharded_tables.table_type = 'table') as `stats__num_bytes__include`,
+
+        'Partitioned By' as `stats__partitioning_type__label`,
+        partition_column as `stats__partitioning_type__value`,
+        'The partitioning column for this table' as `stats__partitioning_type__description`,
+        is_partitioned as `stats__partitioning_type__include`,
+
+        'Clustered By' as `stats__clustering_fields__label`,
+        clustering_columns as `stats__clustering_fields__value`,
+        'The clustering columns for this table' as `stats__clustering_fields__description`,
+        is_clustered as `stats__clustering_fields__include`
+
+    -- join using relation_id (an actual relation, not a shard prefix) to make
+    -- sure that column metadata is picked up through the join. This will only
+    -- return the column information for the "max" table in a date-sharded table set
+    from unsharded_tables
+    left join columns using (relation_id)
+    left join column_stats using (relation_id)
+  
+2021-07-13 03:02:53.584788 (Thread-174): handling poll request
+2021-07-13 03:02:53.585072 (Thread-174): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5330400>]}
+2021-07-13 03:02:53.585703 (Thread-174): sending response (<Response 9276 bytes [200 OK]>) to 10.0.29.103
+2021-07-13 03:02:54.942027 (Thread-175): handling poll request
+2021-07-13 03:02:54.942307 (Thread-175): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca53307c0>]}
+2021-07-13 03:02:54.942851 (Thread-175): sending response (<Response 297 bytes [200 OK]>) to 10.0.39.85
+2021-07-13 03:02:55.047074 (MainThread): 03:02:55 | Catalog written to /usr/src/develop/user-27625/environment-33640/repository-27865/dbt_demo_dir/target/catalog.json
+2021-07-13 03:02:56.323023 (Thread-176): handling poll request
+2021-07-13 03:02:56.323307 (Thread-176): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5ac95e0>]}
+2021-07-13 03:02:56.324031 (Thread-176): sending response (<Response 2363 bytes [200 OK]>) to 10.0.4.239
+2021-07-13 03:02:56.943351 (Thread-177): handling status request
+2021-07-13 03:02:56.943649 (Thread-177): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5ac9340>]}
+2021-07-13 03:02:56.944199 (Thread-177): sending response (<Response 887 bytes [200 OK]>) to 10.0.2.27
+2021-07-13 03:02:56.984578 (Thread-178): handling status request
+2021-07-13 03:02:56.984840 (Thread-178): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5ac9190>]}
+2021-07-13 03:02:56.985316 (Thread-178): sending response (<Response 887 bytes [200 OK]>) to 10.0.14.3
+2021-07-13 03:02:56.990601 (Thread-179): handling status request
+2021-07-13 03:02:56.990844 (Thread-179): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5330c10>]}
+2021-07-13 03:02:56.991284 (Thread-179): sending response (<Response 887 bytes [200 OK]>) to 10.0.24.78
+2021-07-13 03:02:56.996594 (Thread-180): handling status request
+2021-07-13 03:02:56.996779 (Thread-180): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5ac9d60>]}
+2021-07-13 03:02:56.997153 (Thread-180): sending response (<Response 887 bytes [200 OK]>) to 10.0.16.173
+2021-07-13 03:08:40.239174 (Thread-181): handling status request
+2021-07-13 03:08:40.239473 (Thread-181): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5ac9d00>]}
+2021-07-13 03:08:40.240005 (Thread-181): sending response (<Response 887 bytes [200 OK]>) to 10.0.28.240
+2021-07-13 03:08:40.243274 (Thread-182): handling status request
+2021-07-13 03:08:40.243984 (Thread-183): handling status request
+2021-07-13 03:08:40.244153 (Thread-182): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5ac9940>]}
+2021-07-13 03:08:40.244406 (Thread-183): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5ab9520>]}
+2021-07-13 03:08:40.244821 (Thread-182): sending response (<Response 887 bytes [200 OK]>) to 10.0.24.78
+2021-07-13 03:08:40.245266 (Thread-183): sending response (<Response 887 bytes [200 OK]>) to 10.0.18.17
+2021-07-13 03:08:40.297345 (Thread-184): handling ps request
+2021-07-13 03:08:40.297635 (Thread-184): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5ab9460>]}
+2021-07-13 03:08:40.298412 (Thread-184): sending response (<Response 3016 bytes [200 OK]>) to 10.0.13.233
+2021-07-13 03:08:40.299562 (Thread-185): handling status request
+2021-07-13 03:08:40.299745 (Thread-185): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5ab9970>]}
+2021-07-13 03:08:40.300117 (Thread-185): sending response (<Response 887 bytes [200 OK]>) to 10.0.13.233
+2021-07-13 03:08:40.991890 (Thread-186): handling poll request
+2021-07-13 03:08:40.992174 (Thread-186): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5ab91f0>]}
+2021-07-13 03:08:40.993540 (Thread-186): sending response (<Response 27190 bytes [200 OK]>) to 10.0.16.173
+2021-07-13 03:08:41.626201 (Thread-187): handling status request
+2021-07-13 03:08:41.626485 (Thread-187): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5ac9dc0>]}
+2021-07-13 03:08:41.627023 (Thread-187): sending response (<Response 887 bytes [200 OK]>) to 10.0.29.103
+2021-07-13 03:08:41.662425 (Thread-188): handling status request
+2021-07-13 03:08:41.662689 (Thread-188): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5ac9d30>]}
+2021-07-13 03:08:41.663225 (Thread-188): sending response (<Response 887 bytes [200 OK]>) to 10.0.2.27
+2021-07-13 03:08:41.665431 (Thread-189): handling status request
+2021-07-13 03:08:41.665665 (Thread-189): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5ac90d0>]}
+2021-07-13 03:08:41.666059 (Thread-189): sending response (<Response 887 bytes [200 OK]>) to 10.0.3.121
+2021-07-13 03:11:20.666398 (Thread-190): handling status request
+2021-07-13 03:11:20.668106 (Thread-190): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5ac9c70>]}
+2021-07-13 03:11:20.668611 (Thread-190): sending response (<Response 887 bytes [200 OK]>) to 10.0.46.218
+2021-07-13 03:11:25.811722 (Thread-191): Parsing macros/adapters.sql
+2021-07-13 03:11:25.831033 (Thread-191): Parsing macros/etc.sql
+2021-07-13 03:11:25.833162 (Thread-191): Parsing macros/catalog.sql
+2021-07-13 03:11:25.839082 (Thread-191): Parsing macros/materializations/copy.sql
+2021-07-13 03:11:25.843406 (Thread-191): Parsing macros/materializations/table.sql
+2021-07-13 03:11:25.852993 (Thread-191): Parsing macros/materializations/incremental.sql
+2021-07-13 03:11:25.865239 (Thread-191): Parsing macros/materializations/seed.sql
+2021-07-13 03:11:25.869349 (Thread-191): Parsing macros/materializations/snapshot.sql
+2021-07-13 03:11:25.871987 (Thread-191): Parsing macros/materializations/view.sql
+2021-07-13 03:11:25.877136 (Thread-191): Parsing macros/core.sql
+2021-07-13 03:11:25.883158 (Thread-191): Parsing macros/materializations/helpers.sql
+2021-07-13 03:11:25.897556 (Thread-191): Parsing macros/materializations/common/merge.sql
+2021-07-13 03:11:25.920680 (Thread-191): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-07-13 03:11:25.923515 (Thread-191): Parsing macros/materializations/snapshot/strategies.sql
+2021-07-13 03:11:25.940802 (Thread-191): Parsing macros/materializations/snapshot/snapshot.sql
+2021-07-13 03:11:25.971646 (Thread-191): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-07-13 03:11:25.976506 (Thread-191): Parsing macros/materializations/view/view.sql
+2021-07-13 03:11:25.982590 (Thread-191): Parsing macros/materializations/seed/seed.sql
+2021-07-13 03:11:26.003042 (Thread-191): Parsing macros/materializations/table/table.sql
+2021-07-13 03:11:26.009676 (Thread-191): Parsing macros/materializations/incremental/helpers.sql
+2021-07-13 03:11:26.011551 (Thread-191): Parsing macros/materializations/incremental/incremental.sql
+2021-07-13 03:11:26.017509 (Thread-191): Parsing macros/etc/is_incremental.sql
+2021-07-13 03:11:26.019154 (Thread-191): Parsing macros/etc/query.sql
+2021-07-13 03:11:26.020246 (Thread-191): Parsing macros/etc/datetime.sql
+2021-07-13 03:11:26.029496 (Thread-191): Parsing macros/etc/get_custom_alias.sql
+2021-07-13 03:11:26.030437 (Thread-191): Parsing macros/etc/get_custom_database.sql
+2021-07-13 03:11:26.032073 (Thread-191): Parsing macros/etc/get_custom_schema.sql
+2021-07-13 03:11:26.034092 (Thread-191): Parsing macros/schema_tests/not_null.sql
+2021-07-13 03:11:26.035604 (Thread-191): Parsing macros/schema_tests/accepted_values.sql
+2021-07-13 03:11:26.038298 (Thread-191): Parsing macros/schema_tests/relationships.sql
+2021-07-13 03:11:26.040204 (Thread-191): Parsing macros/schema_tests/unique.sql
+2021-07-13 03:11:26.041951 (Thread-191): Parsing macros/adapters/common.sql
+2021-07-13 03:11:26.269537 (Thread-191): Acquiring new bigquery connection "model.my_new_project.my_first_dbt_model".
+2021-07-13 03:11:26.420403 (Thread-191): Acquiring new bigquery connection "model.my_new_project.my_second_model".
+2021-07-13 03:11:26.506071 (Thread-191): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5887d90>]}
+2021-07-13 03:11:26.509885 (Thread-192): handling status request
+2021-07-13 03:11:26.510152 (Thread-192): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5acdf40>]}
+2021-07-13 03:11:26.510935 (Thread-192): sending response (<Response 10002 bytes [200 OK]>) to 10.0.42.193
+2021-07-13 03:11:26.529991 (Thread-193): handling status request
+2021-07-13 03:11:26.531014 (Thread-194): handling status request
+2021-07-13 03:11:26.531168 (Thread-193): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5887ca0>]}
+2021-07-13 03:11:26.538601 (Thread-194): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca585fdf0>]}
+2021-07-13 03:11:26.539392 (Thread-193): sending response (<Response 10002 bytes [200 OK]>) to 10.0.18.17
+2021-07-13 03:11:26.540157 (Thread-194): sending response (<Response 10002 bytes [200 OK]>) to 10.0.46.218
+2021-07-13 03:14:55.845476 (Thread-195): handling status request
+2021-07-13 03:14:55.845762 (Thread-195): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca533a6d0>]}
+2021-07-13 03:14:55.846626 (Thread-195): sending response (<Response 10002 bytes [200 OK]>) to 10.0.28.240
+2021-07-13 03:14:55.855626 (Thread-196): handling status request
+2021-07-13 03:14:55.856035 (Thread-196): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5887c10>]}
+2021-07-13 03:14:55.856476 (Thread-197): handling ps request
+2021-07-13 03:14:55.858436 (Thread-197): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5a6efa0>]}
+2021-07-13 03:14:55.876959 (Thread-196): sending response (<Response 10002 bytes [200 OK]>) to 10.0.2.27
+2021-07-13 03:14:55.877611 (Thread-197): sending response (<Response 3016 bytes [200 OK]>) to 10.0.16.173
+2021-07-13 03:14:55.899508 (Thread-198): handling status request
+2021-07-13 03:14:55.900144 (Thread-199): handling status request
+2021-07-13 03:14:55.900426 (Thread-198): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca57931f0>]}
+2021-07-13 03:14:55.900649 (Thread-199): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca58871f0>]}
+2021-07-13 03:14:55.901370 (Thread-198): sending response (<Response 10002 bytes [200 OK]>) to 10.0.39.85
+2021-07-13 03:14:55.902105 (Thread-199): sending response (<Response 10002 bytes [200 OK]>) to 10.0.43.149
+2021-07-13 03:14:56.617752 (Thread-200): handling poll request
+2021-07-13 03:14:56.618052 (Thread-200): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca53a4c10>]}
+2021-07-13 03:14:56.619284 (Thread-200): sending response (<Response 27190 bytes [200 OK]>) to 10.0.4.161
+2021-07-13 03:14:58.437517 (Thread-201): handling status request
+2021-07-13 03:14:58.437810 (Thread-201): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca57931f0>]}
+2021-07-13 03:14:58.438607 (Thread-201): sending response (<Response 10002 bytes [200 OK]>) to 10.0.29.103
+2021-07-13 03:14:58.448995 (Thread-202): handling status request
+2021-07-13 03:14:58.449228 (Thread-202): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca52b4850>]}
+2021-07-13 03:14:58.449878 (Thread-202): sending response (<Response 10002 bytes [200 OK]>) to 10.0.14.3
+2021-07-13 03:14:58.473164 (Thread-203): handling status request
+2021-07-13 03:14:58.473353 (Thread-203): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5887790>]}
+2021-07-13 03:14:58.474022 (Thread-203): sending response (<Response 10002 bytes [200 OK]>) to 10.0.39.85
+2021-07-13 03:15:28.986984 (MainThread): Connection 'model.my_new_project.my_second_model' was properly closed.
+2021-07-13 03:15:29.005245 (Thread-204): Parsing macros/adapters.sql
+2021-07-13 03:15:29.024817 (Thread-204): Parsing macros/etc.sql
+2021-07-13 03:15:29.027003 (Thread-204): Parsing macros/catalog.sql
+2021-07-13 03:15:29.033006 (Thread-204): Parsing macros/materializations/copy.sql
+2021-07-13 03:15:29.037545 (Thread-204): Parsing macros/materializations/table.sql
+2021-07-13 03:15:29.048075 (Thread-204): Parsing macros/materializations/incremental.sql
+2021-07-13 03:15:29.059842 (Thread-204): Parsing macros/materializations/seed.sql
+2021-07-13 03:15:29.062420 (Thread-204): Parsing macros/materializations/snapshot.sql
+2021-07-13 03:15:29.064216 (Thread-204): Parsing macros/materializations/view.sql
+2021-07-13 03:15:29.067596 (Thread-204): Parsing macros/core.sql
+2021-07-13 03:15:29.071374 (Thread-204): Parsing macros/materializations/helpers.sql
+2021-07-13 03:15:29.080128 (Thread-204): Parsing macros/materializations/common/merge.sql
+2021-07-13 03:15:29.093650 (Thread-204): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-07-13 03:15:29.095392 (Thread-204): Parsing macros/materializations/snapshot/strategies.sql
+2021-07-13 03:15:29.115330 (Thread-204): Parsing macros/materializations/snapshot/snapshot.sql
+2021-07-13 03:15:29.147114 (Thread-204): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-07-13 03:15:29.152588 (Thread-204): Parsing macros/materializations/view/view.sql
+2021-07-13 03:15:29.158706 (Thread-204): Parsing macros/materializations/seed/seed.sql
+2021-07-13 03:15:29.178882 (Thread-204): Parsing macros/materializations/table/table.sql
+2021-07-13 03:15:29.185460 (Thread-204): Parsing macros/materializations/incremental/helpers.sql
+2021-07-13 03:15:29.187289 (Thread-204): Parsing macros/materializations/incremental/incremental.sql
+2021-07-13 03:15:29.193129 (Thread-204): Parsing macros/etc/is_incremental.sql
+2021-07-13 03:15:29.194710 (Thread-204): Parsing macros/etc/query.sql
+2021-07-13 03:15:29.195778 (Thread-204): Parsing macros/etc/datetime.sql
+2021-07-13 03:15:29.204421 (Thread-204): Parsing macros/etc/get_custom_alias.sql
+2021-07-13 03:15:29.205367 (Thread-204): Parsing macros/etc/get_custom_database.sql
+2021-07-13 03:15:29.207095 (Thread-204): Parsing macros/etc/get_custom_schema.sql
+2021-07-13 03:15:29.209086 (Thread-204): Parsing macros/schema_tests/not_null.sql
+2021-07-13 03:15:29.210656 (Thread-204): Parsing macros/schema_tests/accepted_values.sql
+2021-07-13 03:15:29.213390 (Thread-204): Parsing macros/schema_tests/relationships.sql
+2021-07-13 03:15:29.215305 (Thread-204): Parsing macros/schema_tests/unique.sql
+2021-07-13 03:15:29.227827 (Thread-204): Parsing macros/adapters/common.sql
+2021-07-13 03:15:29.466746 (Thread-204): Acquiring new bigquery connection "model.my_new_project.my_first_dbt_model".
+2021-07-13 03:15:29.473244 (Thread-204): Acquiring new bigquery connection "model.my_new_project.my_second_model".
+2021-07-13 03:15:29.567380 (Thread-204): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5a81700>]}
+2021-07-13 03:15:29.609931 (Thread-205): handling status request
+2021-07-13 03:15:29.610226 (Thread-205): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca593f7c0>]}
+2021-07-13 03:15:29.611336 (Thread-205): sending response (<Response 10002 bytes [200 OK]>) to 10.0.27.46
+2021-07-13 03:15:29.642829 (Thread-206): handling status request
+2021-07-13 03:15:29.643657 (Thread-207): handling status request
+2021-07-13 03:15:29.643835 (Thread-206): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5a7d280>]}
+2021-07-13 03:15:29.644063 (Thread-207): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5a7da90>]}
+2021-07-13 03:15:29.644822 (Thread-206): sending response (<Response 10002 bytes [200 OK]>) to 10.0.33.106
+2021-07-13 03:15:29.645562 (Thread-207): sending response (<Response 10002 bytes [200 OK]>) to 10.0.46.218
+2021-07-13 03:15:53.812377 (Thread-208): handling status request
+2021-07-13 03:15:53.812668 (Thread-208): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5492970>]}
+2021-07-13 03:15:53.813447 (Thread-208): sending response (<Response 10002 bytes [200 OK]>) to 10.0.3.121
+2021-07-13 03:15:53.842784 (Thread-209): handling ps request
+2021-07-13 03:15:53.843051 (Thread-209): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5a7d520>]}
+2021-07-13 03:15:53.843732 (Thread-209): sending response (<Response 3016 bytes [200 OK]>) to 10.0.39.85
+2021-07-13 03:15:53.853544 (Thread-210): handling status request
+2021-07-13 03:15:53.853753 (Thread-210): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca56f3760>]}
+2021-07-13 03:15:53.854403 (Thread-210): sending response (<Response 10002 bytes [200 OK]>) to 10.0.16.173
+2021-07-13 03:15:53.877850 (Thread-211): handling status request
+2021-07-13 03:15:53.878201 (Thread-211): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5a7d6d0>]}
+2021-07-13 03:15:53.878998 (Thread-211): sending response (<Response 10002 bytes [200 OK]>) to 10.0.29.103
+2021-07-13 03:15:53.879433 (Thread-212): handling status request
+2021-07-13 03:15:53.879985 (Thread-212): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca56176d0>]}
+2021-07-13 03:15:53.880625 (Thread-212): sending response (<Response 10002 bytes [200 OK]>) to 10.0.42.193
+2021-07-13 03:15:54.589661 (Thread-213): handling poll request
+2021-07-13 03:15:54.589944 (Thread-213): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5a7ddc0>]}
+2021-07-13 03:15:54.591111 (Thread-213): sending response (<Response 27190 bytes [200 OK]>) to 10.0.13.233
+2021-07-13 03:15:55.240035 (Thread-214): handling status request
+2021-07-13 03:15:55.240327 (Thread-214): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5a7dfa0>]}
+2021-07-13 03:15:55.241110 (Thread-214): sending response (<Response 10002 bytes [200 OK]>) to 10.0.42.193
+2021-07-13 03:15:55.246224 (Thread-215): handling status request
+2021-07-13 03:15:55.246458 (Thread-215): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca56ffc40>]}
+2021-07-13 03:15:55.247132 (Thread-215): sending response (<Response 10002 bytes [200 OK]>) to 10.0.4.239
+2021-07-13 03:15:55.254029 (Thread-216): handling status request
+2021-07-13 03:15:55.254219 (Thread-216): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5a7d580>]}
+2021-07-13 03:15:55.254812 (Thread-216): sending response (<Response 10002 bytes [200 OK]>) to 10.0.46.218
+2021-07-13 03:16:05.910016 (Thread-217): handling status request
+2021-07-13 03:16:05.910304 (Thread-217): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca56f9820>]}
+2021-07-13 03:16:05.911145 (Thread-217): sending response (<Response 10002 bytes [200 OK]>) to 10.0.46.218
+2021-07-13 03:16:09.635687 (MainThread): Connection 'model.my_new_project.my_second_model' was properly closed.
+2021-07-13 03:16:09.652922 (Thread-218): Parsing macros/adapters.sql
+2021-07-13 03:16:09.671831 (Thread-218): Parsing macros/etc.sql
+2021-07-13 03:16:09.673945 (Thread-218): Parsing macros/catalog.sql
+2021-07-13 03:16:09.679857 (Thread-218): Parsing macros/materializations/copy.sql
+2021-07-13 03:16:09.684399 (Thread-218): Parsing macros/materializations/table.sql
+2021-07-13 03:16:09.693904 (Thread-218): Parsing macros/materializations/incremental.sql
+2021-07-13 03:16:09.705889 (Thread-218): Parsing macros/materializations/seed.sql
+2021-07-13 03:16:09.708523 (Thread-218): Parsing macros/materializations/snapshot.sql
+2021-07-13 03:16:09.710277 (Thread-218): Parsing macros/materializations/view.sql
+2021-07-13 03:16:09.713721 (Thread-218): Parsing macros/core.sql
+2021-07-13 03:16:09.717537 (Thread-218): Parsing macros/materializations/helpers.sql
+2021-07-13 03:16:09.726478 (Thread-218): Parsing macros/materializations/common/merge.sql
+2021-07-13 03:16:09.740598 (Thread-218): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-07-13 03:16:09.742406 (Thread-218): Parsing macros/materializations/snapshot/strategies.sql
+2021-07-13 03:16:09.759970 (Thread-218): Parsing macros/materializations/snapshot/snapshot.sql
+2021-07-13 03:16:09.790505 (Thread-218): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-07-13 03:16:09.795423 (Thread-218): Parsing macros/materializations/view/view.sql
+2021-07-13 03:16:09.801486 (Thread-218): Parsing macros/materializations/seed/seed.sql
+2021-07-13 03:16:09.830109 (Thread-218): Parsing macros/materializations/table/table.sql
+2021-07-13 03:16:09.840133 (Thread-218): Parsing macros/materializations/incremental/helpers.sql
+2021-07-13 03:16:09.842879 (Thread-218): Parsing macros/materializations/incremental/incremental.sql
+2021-07-13 03:16:09.849510 (Thread-218): Parsing macros/etc/is_incremental.sql
+2021-07-13 03:16:09.851145 (Thread-218): Parsing macros/etc/query.sql
+2021-07-13 03:16:09.852192 (Thread-218): Parsing macros/etc/datetime.sql
+2021-07-13 03:16:09.861303 (Thread-218): Parsing macros/etc/get_custom_alias.sql
+2021-07-13 03:16:09.862241 (Thread-218): Parsing macros/etc/get_custom_database.sql
+2021-07-13 03:16:09.863888 (Thread-218): Parsing macros/etc/get_custom_schema.sql
+2021-07-13 03:16:09.865783 (Thread-218): Parsing macros/schema_tests/not_null.sql
+2021-07-13 03:16:09.867294 (Thread-218): Parsing macros/schema_tests/accepted_values.sql
+2021-07-13 03:16:09.869870 (Thread-218): Parsing macros/schema_tests/relationships.sql
+2021-07-13 03:16:09.871711 (Thread-218): Parsing macros/schema_tests/unique.sql
+2021-07-13 03:16:09.873401 (Thread-218): Parsing macros/adapters/common.sql
+2021-07-13 03:16:10.097197 (Thread-218): Acquiring new bigquery connection "model.my_new_project.my_first_dbt_model".
+2021-07-13 03:16:10.103425 (Thread-218): Acquiring new bigquery connection "model.my_new_project.my_second_model".
+2021-07-13 03:16:10.205767 (Thread-218): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5777370>]}
+2021-07-13 03:16:10.406210 (Thread-219): handling status request
+2021-07-13 03:16:10.406522 (Thread-219): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5576820>]}
+2021-07-13 03:16:10.407340 (Thread-219): sending response (<Response 10002 bytes [200 OK]>) to 10.0.33.106
+2021-07-13 03:16:10.412477 (Thread-220): handling status request
+2021-07-13 03:16:10.413189 (Thread-221): handling status request
+2021-07-13 03:16:10.413355 (Thread-220): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca539b700>]}
+2021-07-13 03:16:10.414133 (Thread-220): sending response (<Response 10002 bytes [200 OK]>) to 10.0.27.46
+2021-07-13 03:16:10.414292 (Thread-221): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca53e6520>]}
+2021-07-13 03:16:10.415520 (Thread-221): sending response (<Response 10002 bytes [200 OK]>) to 10.0.28.240
+2021-07-13 03:16:39.686479 (Thread-222): handling status request
+2021-07-13 03:16:39.686769 (Thread-222): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5a7d430>]}
+2021-07-13 03:16:39.687540 (Thread-222): sending response (<Response 10002 bytes [200 OK]>) to 10.0.13.233
+2021-07-13 03:16:39.709792 (Thread-223): handling status request
+2021-07-13 03:16:39.710033 (Thread-223): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5779910>]}
+2021-07-13 03:16:39.710754 (Thread-223): sending response (<Response 10002 bytes [200 OK]>) to 10.0.42.193
+2021-07-13 03:16:39.786030 (Thread-224): handling status request
+2021-07-13 03:16:39.795913 (Thread-224): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5adcf10>]}
+2021-07-13 03:16:39.796667 (Thread-224): sending response (<Response 10002 bytes [200 OK]>) to 10.0.18.17
+2021-07-13 03:16:51.374007 (Thread-225): handling status request
+2021-07-13 03:16:51.374295 (Thread-225): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca539b460>]}
+2021-07-13 03:16:51.375127 (Thread-225): sending response (<Response 10002 bytes [200 OK]>) to 10.0.27.46
+2021-07-13 03:16:54.765526 (MainThread): Connection 'model.my_new_project.my_second_model' was properly closed.
+2021-07-13 03:16:54.782747 (Thread-226): Parsing macros/adapters.sql
+2021-07-13 03:16:54.801519 (Thread-226): Parsing macros/etc.sql
+2021-07-13 03:16:54.803638 (Thread-226): Parsing macros/catalog.sql
+2021-07-13 03:16:54.809533 (Thread-226): Parsing macros/materializations/copy.sql
+2021-07-13 03:16:54.813830 (Thread-226): Parsing macros/materializations/table.sql
+2021-07-13 03:16:54.824391 (Thread-226): Parsing macros/materializations/incremental.sql
+2021-07-13 03:16:54.836412 (Thread-226): Parsing macros/materializations/seed.sql
+2021-07-13 03:16:54.839038 (Thread-226): Parsing macros/materializations/snapshot.sql
+2021-07-13 03:16:54.840796 (Thread-226): Parsing macros/materializations/view.sql
+2021-07-13 03:16:54.844188 (Thread-226): Parsing macros/core.sql
+2021-07-13 03:16:54.847959 (Thread-226): Parsing macros/materializations/helpers.sql
+2021-07-13 03:16:54.856714 (Thread-226): Parsing macros/materializations/common/merge.sql
+2021-07-13 03:16:54.870253 (Thread-226): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-07-13 03:16:54.872029 (Thread-226): Parsing macros/materializations/snapshot/strategies.sql
+2021-07-13 03:16:54.889277 (Thread-226): Parsing macros/materializations/snapshot/snapshot.sql
+2021-07-13 03:16:54.919749 (Thread-226): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-07-13 03:16:54.924632 (Thread-226): Parsing macros/materializations/view/view.sql
+2021-07-13 03:16:54.930629 (Thread-226): Parsing macros/materializations/seed/seed.sql
+2021-07-13 03:16:54.950765 (Thread-226): Parsing macros/materializations/table/table.sql
+2021-07-13 03:16:54.957194 (Thread-226): Parsing macros/materializations/incremental/helpers.sql
+2021-07-13 03:16:54.958992 (Thread-226): Parsing macros/materializations/incremental/incremental.sql
+2021-07-13 03:16:54.965080 (Thread-226): Parsing macros/etc/is_incremental.sql
+2021-07-13 03:16:54.966723 (Thread-226): Parsing macros/etc/query.sql
+2021-07-13 03:16:54.967902 (Thread-226): Parsing macros/etc/datetime.sql
+2021-07-13 03:16:54.977028 (Thread-226): Parsing macros/etc/get_custom_alias.sql
+2021-07-13 03:16:54.978030 (Thread-226): Parsing macros/etc/get_custom_database.sql
+2021-07-13 03:16:54.979737 (Thread-226): Parsing macros/etc/get_custom_schema.sql
+2021-07-13 03:16:54.981748 (Thread-226): Parsing macros/schema_tests/not_null.sql
+2021-07-13 03:16:54.983370 (Thread-226): Parsing macros/schema_tests/accepted_values.sql
+2021-07-13 03:16:54.986088 (Thread-226): Parsing macros/schema_tests/relationships.sql
+2021-07-13 03:16:54.988032 (Thread-226): Parsing macros/schema_tests/unique.sql
+2021-07-13 03:16:54.989826 (Thread-226): Parsing macros/adapters/common.sql
+2021-07-13 03:16:55.213271 (Thread-226): Acquiring new bigquery connection "model.my_new_project.my_first_dbt_model".
+2021-07-13 03:16:55.219453 (Thread-226): Acquiring new bigquery connection "model.my_new_project.my_second_model".
+2021-07-13 03:16:55.312335 (Thread-226): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca511e370>]}
+2021-07-13 03:16:55.427688 (Thread-227): handling status request
+2021-07-13 03:16:55.428160 (Thread-227): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca593f280>]}
+2021-07-13 03:16:55.428597 (Thread-228): handling status request
+2021-07-13 03:16:55.429413 (Thread-227): sending response (<Response 10002 bytes [200 OK]>) to 10.0.2.27
+2021-07-13 03:16:55.439418 (Thread-228): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca51953d0>]}
+2021-07-13 03:16:55.440393 (Thread-228): sending response (<Response 10002 bytes [200 OK]>) to 10.0.13.233
+2021-07-13 03:16:55.457062 (Thread-229): handling status request
+2021-07-13 03:16:55.457272 (Thread-229): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca540cc40>]}
+2021-07-13 03:16:55.457933 (Thread-229): sending response (<Response 10002 bytes [200 OK]>) to 10.0.42.193
+2021-07-13 03:18:05.930274 (Thread-230): handling status request
+2021-07-13 03:18:05.930563 (Thread-230): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca540c4c0>]}
+2021-07-13 03:18:05.931345 (Thread-230): sending response (<Response 10002 bytes [200 OK]>) to 10.0.18.17
+2021-07-13 03:18:05.945036 (Thread-231): handling status request
+2021-07-13 03:18:05.945271 (Thread-231): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5190f10>]}
+2021-07-13 03:18:05.945926 (Thread-231): sending response (<Response 10002 bytes [200 OK]>) to 10.0.2.27
+2021-07-13 03:18:05.957962 (Thread-232): handling status request
+2021-07-13 03:18:05.958160 (Thread-232): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca58fd550>]}
+2021-07-13 03:18:05.958811 (Thread-232): sending response (<Response 10002 bytes [200 OK]>) to 10.0.43.149
+2021-07-13 03:18:36.771941 (Thread-233): handling status request
+2021-07-13 03:18:36.772273 (Thread-233): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5126490>]}
+2021-07-13 03:18:36.773103 (Thread-233): sending response (<Response 10002 bytes [200 OK]>) to 10.0.27.46
+2021-07-13 03:18:36.774127 (Thread-234): handling status request
+2021-07-13 03:18:36.774397 (Thread-234): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca593f280>]}
+2021-07-13 03:18:36.775142 (Thread-234): sending response (<Response 10002 bytes [200 OK]>) to 10.0.2.27
+2021-07-13 03:18:36.785462 (Thread-235): handling status request
+2021-07-13 03:18:36.785642 (Thread-235): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca51268b0>]}
+2021-07-13 03:18:36.786251 (Thread-235): sending response (<Response 10002 bytes [200 OK]>) to 10.0.29.103
+2021-07-13 03:18:36.787594 (Thread-236): handling ps request
+2021-07-13 03:18:36.787781 (Thread-236): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca51262e0>]}
+2021-07-13 03:18:36.788369 (Thread-236): sending response (<Response 3016 bytes [200 OK]>) to 10.0.46.218
+2021-07-13 03:18:36.955913 (Thread-237): handling status request
+2021-07-13 03:18:36.956204 (Thread-237): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5126130>]}
+2021-07-13 03:18:36.956977 (Thread-237): sending response (<Response 10002 bytes [200 OK]>) to 10.0.39.85
+2021-07-13 03:18:37.565814 (Thread-238): handling poll request
+2021-07-13 03:18:37.566106 (Thread-238): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca51261f0>]}
+2021-07-13 03:18:37.567288 (Thread-238): sending response (<Response 27190 bytes [200 OK]>) to 10.0.2.27
+2021-07-13 03:18:38.213193 (Thread-239): handling status request
+2021-07-13 03:18:38.213479 (Thread-239): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5126160>]}
+2021-07-13 03:18:38.214241 (Thread-239): sending response (<Response 10002 bytes [200 OK]>) to 10.0.3.121
+2021-07-13 03:18:38.229655 (Thread-240): handling status request
+2021-07-13 03:18:38.230255 (Thread-241): handling status request
+2021-07-13 03:18:38.230531 (Thread-240): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca511e340>]}
+2021-07-13 03:18:38.231365 (Thread-240): sending response (<Response 10002 bytes [200 OK]>) to 10.0.39.85
+2021-07-13 03:18:38.231523 (Thread-241): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca511e550>]}
+2021-07-13 03:18:38.232438 (Thread-241): sending response (<Response 10002 bytes [200 OK]>) to 10.0.18.17
+2021-07-13 03:26:44.700158 (Thread-242): handling status request
+2021-07-13 03:26:44.700456 (Thread-242): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca511ed00>]}
+2021-07-13 03:26:44.701246 (Thread-242): sending response (<Response 10002 bytes [200 OK]>) to 10.0.3.121
+2021-07-13 03:26:44.715302 (Thread-243): handling status request
+2021-07-13 03:26:44.715581 (Thread-243): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca57ec100>]}
+2021-07-13 03:26:44.716303 (Thread-243): sending response (<Response 10002 bytes [200 OK]>) to 10.0.4.161
+2021-07-13 03:26:44.744669 (Thread-244): handling ps request
+2021-07-13 03:26:44.744915 (Thread-244): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca511ec70>]}
+2021-07-13 03:26:44.745591 (Thread-244): sending response (<Response 3016 bytes [200 OK]>) to 10.0.18.17
+2021-07-13 03:26:44.747880 (Thread-245): handling status request
+2021-07-13 03:26:44.748067 (Thread-245): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca511e4c0>]}
+2021-07-13 03:26:44.748706 (Thread-245): sending response (<Response 10002 bytes [200 OK]>) to 10.0.29.103
+2021-07-13 03:26:44.790386 (Thread-246): handling status request
+2021-07-13 03:26:44.790644 (Thread-246): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca511e370>]}
+2021-07-13 03:26:44.791411 (Thread-246): sending response (<Response 10002 bytes [200 OK]>) to 10.0.29.103
+2021-07-13 03:26:45.611321 (Thread-247): handling poll request
+2021-07-13 03:26:45.611618 (Thread-247): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca511e160>]}
+2021-07-13 03:26:45.612786 (Thread-247): sending response (<Response 27190 bytes [200 OK]>) to 10.0.33.106
+2021-07-13 03:26:46.270672 (Thread-248): handling status request
+2021-07-13 03:26:46.270995 (Thread-248): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca511e790>]}
+2021-07-13 03:26:46.271753 (Thread-248): sending response (<Response 10002 bytes [200 OK]>) to 10.0.13.233
+2021-07-13 03:26:46.275274 (Thread-249): handling status request
+2021-07-13 03:26:46.275470 (Thread-249): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca51117f0>]}
+2021-07-13 03:26:46.276100 (Thread-249): sending response (<Response 10002 bytes [200 OK]>) to 10.0.24.78
+2021-07-13 03:26:46.311294 (Thread-250): handling status request
+2021-07-13 03:26:46.311574 (Thread-250): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca51117c0>]}
+2021-07-13 03:26:46.312316 (Thread-250): sending response (<Response 10002 bytes [200 OK]>) to 10.0.33.106
+2021-07-13 03:48:49.459193 (MainThread): Connection 'model.my_new_project.my_second_model' was properly closed.
+2021-07-13 03:48:49.495414 (Thread-251): Got an acceptable cached parse result
+2021-07-13 03:48:49.813715 (Thread-251): Acquiring new bigquery connection "model.my_new_project.my_first_dbt_model".
+2021-07-13 03:48:49.931757 (Thread-251): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca50be4f0>]}
+2021-07-13 03:48:50.106988 (Thread-252): handling status request
+2021-07-13 03:48:50.107287 (Thread-252): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca50be310>]}
+2021-07-13 03:48:50.107802 (Thread-252): sending response (<Response 1197 bytes [200 OK]>) to 10.0.4.161
+2021-07-13 03:48:50.145042 (Thread-253): handling status request
+2021-07-13 03:48:50.145363 (Thread-253): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca50be2b0>]}
+2021-07-13 03:48:50.145870 (Thread-253): sending response (<Response 1197 bytes [200 OK]>) to 10.0.42.92
+2021-07-13 03:48:50.369690 (Thread-254): handling status request
+2021-07-13 03:48:50.369989 (Thread-254): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca7e06940>]}
+2021-07-13 03:48:50.370503 (Thread-254): sending response (<Response 1197 bytes [200 OK]>) to 10.0.28.240
+2021-07-13 03:49:00.110240 (Thread-255): handling status request
+2021-07-13 03:49:00.110532 (Thread-255): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd6d240a-1fad-4047-a6dd-38a9dfa5ab78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca5686dc0>]}
+2021-07-13 03:49:00.111084 (Thread-255): sending response (<Response 1197 bytes [200 OK]>) to 10.0.24.78
