@@ -19,6 +19,7 @@ analysis-paths: ["dbt_demo_dir/analysis"]
 test-paths: ["dbt_demo_dir/tests"]
 data-paths: ["dbt_demo_dir/data"]
 macro-paths: ["dbt_demo_dir/macros"]
+docs-paths: ["dbt_demo_dir/models"]
 log-path: dbt_demo_dir/logs
 modules-path: dbt_demo_dir/dbt_modules
 
